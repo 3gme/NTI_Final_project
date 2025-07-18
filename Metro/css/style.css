@@ -8,7 +8,9 @@
     font-family: "Poppins", sans-serif;
 }
 
-
+body{
+    height: 200vh;
+}
 
 
 /* top header */
@@ -87,6 +89,8 @@
     transition: all 0.2;
 }
 
+
+
 .nav-end .link-item:hover {
     color: rgb(210, 73, 73);
 }
@@ -107,6 +111,28 @@
     font-size: 0.7rem;
 }
 /* buttom navbar */
+.bottom-header .home-pages{
+    position: relative;
+}
+
+.bottom-header .sub-home-pages{
+    position: absolute;
+    justify-content: space-between;
+    bottom: -270px;
+    left: -300px;
+    display: none;
+    width: 80rem;
+    padding: 0;
+    margin: 0;
+    background-color: white;
+}
+.bottom-header .home-pages:hover .sub-home-pages{
+    display: flex ;
+}
+
+.bottom-header .sub-home-pages .card:hover{
+    box-shadow: 0 0 5px gray;
+}   
 @media (max-width: 1400px) {
     .nav-middle .contact{
         display: none;
@@ -137,18 +163,34 @@
         right: 70px;   
     }
 }
-@media (max-width : 1009px){
+@media (max-width : 1014px){
     .nav-end .red-zero{
         top: -7px;
         right: 44px;   
     }
-    
+        .nav-middle{
+        margin-left: 20px;
+    }
+
 }
 @media (max-width : 768px){
     .nav-end .red-zero{
         top: -7px;
         right: 5px;
 
+    }
+    .top-header{
+        justify-content: space-evenly !important;
+    }
+}
+@media (max-width : 992px){
+    .mynav{
+        position: relative;
+    }
+    .bottom-header{
+        position: absolute;
+        top: 28%;
+        left: -5%;
     }
 }
 
