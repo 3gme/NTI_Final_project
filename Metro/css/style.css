@@ -8,10 +8,6 @@
     font-family: "Poppins", sans-serif;
 }
 
-body{
-    height: 200vh;
-}
-
 
 /* top header */
 .top-header {
@@ -24,13 +20,13 @@ body{
 }
 
 /* nav-middle */
-.nav-middle .link-item {
+.link-item {
     text-decoration: none !important;
     color: black;
     transition: all 0.1s;
 }
 
-.nav-middle .link-item:hover {
+.link-item:hover {
     color: rgb(210, 73, 73);
 }
 
@@ -110,12 +106,13 @@ body{
     right: 16%;
     font-size: 0.7rem;
 }
+
 /* buttom navbar */
-.bottom-header .home-pages{
+.bottom-header .home-pages {
     position: relative;
 }
 
-.bottom-header .sub-home-pages{
+.bottom-header .sub-home-pages {
     position: absolute;
     justify-content: space-between;
     bottom: -270px;
@@ -126,68 +123,79 @@ body{
     margin: 0;
     background-color: white;
 }
-.bottom-header .home-pages:hover .sub-home-pages{
-    display: flex ;
+
+.bottom-header .home-pages:hover .sub-home-pages {
+    display: flex;
+    z-index: 5;
 }
 
-.bottom-header .sub-home-pages .card:hover{
+.bottom-header .sub-home-pages .card:hover {
     box-shadow: 0 0 5px gray;
-}   
+}
+
 @media (max-width: 1400px) {
-    .nav-middle .contact{
+    .nav-middle .contact {
         display: none;
     }
-    
-    .nav-middle .input-group-text{
+
+    .nav-middle .input-group-text {
         max-height: 40px;
         padding: 8px !important;
     }
-    .search-space{
+
+    .search-space {
         max-height: 50px;
     }
 
-    .nav-end .icon-remove
-    {
+    .nav-end .icon-remove {
         display: none;
     }
-    .nav-end .red-zero{
+
+    .nav-end .red-zero {
         width: 17px;
         height: 17px;
         top: -7px;
         right: 87px;
     }
 }
-@media (max-width : 1204px){
-    .nav-end .red-zero{
+
+@media (max-width : 1204px) {
+    .nav-end .red-zero {
         top: -7px;
-        right: 70px;   
+        right: 70px;
     }
 }
-@media (max-width : 1014px){
-    .nav-end .red-zero{
+
+@media (max-width : 1014px) {
+    .nav-end .red-zero {
         top: -7px;
-        right: 44px;   
+        right: 44px;
     }
-        .nav-middle{
+
+    .nav-middle {
         margin-left: 20px;
     }
 
 }
-@media (max-width : 768px){
-    .nav-end .red-zero{
+
+@media (max-width : 768px) {
+    .nav-end .red-zero {
         top: -7px;
         right: 5px;
 
     }
-    .top-header{
+
+    .top-header {
         justify-content: space-evenly !important;
     }
 }
-@media (max-width : 992px){
-    .mynav{
+
+@media (max-width : 992px) {
+    .mynav {
         position: relative;
     }
-    .bottom-header{
+
+    .bottom-header {
         position: absolute;
         top: 28%;
         left: -5%;
@@ -202,6 +210,328 @@ body{
     color: black;
     transition: all 0.2;
 }
+
 .bottom-header .link-item:hover {
     color: rgb(210, 73, 73);
+}
+
+
+/* second section */
+.second-section .carousel-inner {
+    height: 500px;
+    z-index: 1;
+}
+
+.second-section .carousel-inner img {
+    height: 500px;
+}
+
+.second-section .side-div {
+    height: 500px;
+    z-index: 1;
+}
+
+.second-section .carousel-indicators button {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: 2px solid white;
+    background-color: transparent;
+
+}
+
+.second-section .carousel-indicators .active {
+    background-color: white;
+}
+
+.second-section .carousel-inner .carousel-item .carousel-caption {
+    width: 350px;
+    color: white;
+    text-align: start;
+    top: 19%;
+    left: 7%;
+}
+
+.second-section .side-div .sub-side-div {
+    height: 250px;
+    color: black;
+    padding: 2%;
+
+}
+
+.second-section .side-div .First {
+    width: 60%;
+}
+
+.second-section .lower-part {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.second-section .lower-part .icon {
+    color: gray;
+    transition: all 0.3s;
+}
+
+.second-section .lower-part .item:hover .icon {
+    color: black;
+}
+
+.second-section .lower-part .item1,
+.second-section .lower-part .item2,
+.second-section .lower-part .item3 {
+    text-align: center;
+    border-right: 1px solid gray;
+    justify-content: space-evenly;
+}
+
+.second-section .lower-part .item4 {
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+
+@media (max-width: 1200px) {
+    .second-section .lower-part {
+        width: 100%;
+    }
+
+}
+
+/* Third Section */
+.owl-carousel-one .owl-nav {
+    display: none !important;
+}
+
+.third-section .item .image {
+    position: relative;
+}
+
+.third-section .item img {
+    aspect-ratio: 1/1;
+    width: 100%;
+    height: 100%;
+    border-radius: 100px;
+    text-align: center;
+}
+
+.third-section .item .hoverdiv {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(179, 179, 179);
+    opacity: 0.9;
+    border-radius: 50%;
+    display: none;
+    transition: all 1s ease;
+    color: white;
+    vertical-align: auto;
+    text-align: center;
+}
+
+.third-section .item:hover .hoverdiv {
+    display: block;
+}
+
+.third-section .item .hoverdiv .icon {
+    margin-top: 47%;
+    font-size: 1.2rem;
+    opacity: 0;
+    transition: all 0.3s;
+    color: white;
+}
+
+.third-section .item:hover .hoverdiv .icon {
+    opacity: 1;
+    animation: bounce 0.6s;
+}
+
+.third-section .item:hover .mylink a {
+    color: red;
+}
+
+.third-section .item .Link-item {
+    text-decoration: none;
+    color: black;
+    font-size: 1.2rem;
+}
+
+.third-section .part-2 .my-link {
+    color: red;
+    text-decoration: none;
+    border-bottom: 1px solid red;
+    transition: 0.4s ease;
+}
+
+.third-section .part-2 .my-link:hover {
+    border-bottom: 1px dashed red;
+}
+
+@keyframes bounce {
+
+    0%,
+    100% {
+        transform: translateX(0);
+    }
+
+    50% {
+        transform: translateX(6px);
+    }
+}
+
+
+/* forth section */
+.forth-section .Flash-Deals {
+    font-weight: bold;
+}
+
+.forth-section .Timer {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.forth-section .Timer .zero-circle {
+    background-color: black;
+    color: white;
+    height: 35px;
+    width: 35px;
+    font-size: small;
+    border-radius: 50%;
+    margin: 0% 2%;
+    text-align: center;
+    padding-top: 2.5%;
+}
+
+.forth-section .More-products {
+    display: flex;
+    justify-content: end;
+}
+
+.slide-link {
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    /* Optional */
+}
+
+.slide-link::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 1%;
+    height: 2px;
+    width: 100%;
+    background-color: black;
+    /* underline color */
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.3s ease;
+}
+
+.slide-link:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+/* forth-section part-2 */
+.forth-section .part-2 .card-img-top {
+    width: 100%;
+}
+
+.forth-section .part-2 .carousel-two .item {
+    border: 1px solid lightgray;
+}
+
+.forth-section .part-2 .carousel-two .card .card-body .icon {
+    font-size: 0.8rem;
+}
+
+.forth-section .part-2 .carousel-two .card .cardhover {
+    position: absolute;
+    top: 5%;
+    right: 8%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.5s ease;
+}
+
+.forth-section .part-2 .carousel-two .card:hover .cardhover {
+    opacity: 1;
+    transform: translate(0);
+}
+
+.forth-section .part-2 .carousel-two .card .cardhover button{
+    background-color: rgb(197, 197, 197) !important;
+    border: none;
+    color: black;
+    font-size: 1.1rem;
+}
+.forth-section .part-2 .carousel-two .card .cardhover button:hover{
+    background-color: black !important;
+    color: white;
+}
+
+.forth-section .part-2 .carousel-two .card:hover {
+    box-shadow: 0px 0px 5px darkgray;
+}
+
+
+
+.forth-section .carousel-two {
+    position: relative;
+    z-index: 1;
+}
+
+.forth-section .carousel-two .owl-nav .owl-prev {
+    position: absolute;
+    width: 30px;
+    height: 50px;
+    top: 45%;
+    left: -5px;
+    background-color: white;
+    font-size: 2rem;
+    color: black;
+    box-shadow: 0 0 3px rgb(186, 186, 186);
+    display: block;
+    transition: all 0.7s ease;
+}
+
+.forth-section .carousel-two .owl-nav .owl-next {
+    position: absolute;
+    width: 30px;
+    height: 50px;
+    top: 45%;
+    right: -5px;
+    background-color: white;
+    font-size: 2rem;
+    color: black;
+    box-shadow: 0 0 3px rgb(186, 186, 186);
+    display: block;
+    transition: all 0.7s ease;
+}
+
+.carousel-two:hover .owl-nav .owl-prev,
+.carousel-two:hover .owl-nav .owl-next {
+    display: block;
+}
+
+.carousel-two .owl-nav .owl-prev:hover,
+.carousel-two .owl-nav .owl-next:hover {
+    color: white;
+    background-color: black;
+}
+
+.carousel-two .discount {
+    position: absolute;
+    background-color: rgb(210, 2, 2);
+    color: white;
+    padding: 2% 3%;
+    top: 6%;
+    left: 7%;
+    font-size: 0.8rem;
+    border-radius: 5px;
 }
