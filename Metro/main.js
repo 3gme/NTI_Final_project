@@ -40,34 +40,27 @@ $('.owl-carousel-one').owlCarousel({
 
 $('.carousel-two').owlCarousel({
     loop:true,
-    margin:0,
     dots:false,
     nav:true,
     responsive:{
         0: {
             items: 1,
-            nav: false
         },
         
         200: {
             items: 2,
-            nav: false
         },
         480: {
             items: 3,
-            nav: false
         },
         768: {
             items: 4,
-            nav: false
         },
         992: {
             items: 5,
-            nav: false
         },
         1200: {
             items: 6,
-            nav: false
         }
     }
 })
