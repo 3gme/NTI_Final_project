@@ -147,14 +147,16 @@
     width: 97rem;
     background-color: white;
 }
-          
+
 .nav-item a.active {
     border-bottom: 0% !important;
 }
-        /* Canve in the buttom header */
+
+/* Canve in the buttom header */
 .list-item-canva {
     position: relative;
 }
+
 .list-item-canva-hover {
     position: absolute;
     top: -50px;
@@ -164,32 +166,38 @@
     height: 100vh;
     opacity: 0;
     visibility: hidden;
-    transition:all 0.2s ease;
+    transition: all 0.2s ease;
 }
+
 .list-item-canva:hover .list-item-canva-hover {
     visibility: visible;
     z-index: 100;
     opacity: 1;
 }
-.list-item-canva-hover ul{
+
+.list-item-canva-hover ul {
     list-style: none;
     list-style-position: outside;
 }
-.list-item-canva-hover li{
+
+.list-item-canva-hover li {
     padding: 3% 0;
 }
-.item .canva-item-first-body{
+
+.item .canva-item-first-body {
     position: absolute;
     left: 0px;
     top: 0px;
-    padding-top: 10% ;
-    padding-left: 7% ;
+    padding-top: 10%;
+    padding-left: 7%;
     color: white;
 }
-.letter-space{
+
+.letter-space {
     letter-spacing: 2px;
 }
-        /* Home-pages hover */
+
+/* Home-pages hover */
 .bottom-header .home-pages:hover .sub-home-pages {
     display: flex;
     z-index: 5;
@@ -287,11 +295,13 @@
     top: 19%;
     left: 7%;
 }
+
 .second-section .carousel-inner .carousel-item .carousel-caption button:hover {
     background-color: transparent;
     border: 2px solid white;
     color: white;
 }
+
 .second-section .side-div {
     height: 500px;
     z-index: 1;
@@ -304,7 +314,7 @@
 
 }
 
-.body-banner-2and3{
+.body-banner-2and3 {
     position: absolute;
     width: 70%;
     top: 0%;
@@ -312,7 +322,8 @@
     padding-top: 7%;
     padding-left: 5%;
 }
-.sale-side-div-2{
+
+.sale-side-div-2 {
     width: 5rem;
     height: 5rem;
     position: absolute;
@@ -616,7 +627,7 @@
     width: 100%;
 }
 
-.h100-w100{
+.h100-w100 {
     height: 100% !important;
     width: 100% !important;
 }
@@ -783,5 +794,152 @@
 
     .fifth-section .part-3 .main-row .card {
         height: 300px;
+    }
+}
+
+/* Section - 6 */
+.Sliding-section-6 .carousel-inner {
+    height: 500px;
+}
+
+.Sliding-section-6 .carousel-inner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.Sliding-section-6 .carousel-control-prev .icon-prev {
+    color: transparent !important;
+    font-weight: 300;
+    font-size: 4rem;
+    transition: all 1.5s ease;
+}
+
+.Sliding-section-6 .carousel:hover .carousel-control-prev .icon-prev {
+    color: black !important;
+}
+
+.Sliding-section-6 .carousel-control-next .icon-next {
+    color: transparent !important;
+    font-weight: 300;
+    font-size: 4rem;
+    transition: all 1.5s ease;
+}
+
+.Sliding-section-6 .carousel:hover .carousel-control-next .icon-next {
+    color: black !important;
+}
+
+.Sliding-section-6 .carousel-indicators button {
+    height: 50px;
+    width: 50px;
+    border: 2px solid gray;
+    border-radius: 5px;
+}
+
+.Sliding-section-6 .carousel-indicators button.active {
+    border: 2px solid blue;
+}
+
+.Sliding-section-6 .carousel-indicators {
+    .button-1 {
+        background-image: url(../images/Sliding-6/1.jpg);
+        background-size: cover;
+    }
+
+    .button-2 {
+        background-image: url(../images/Sliding-6/2.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .button-3 {
+        background-image: url(../images/Sliding-6/3.jpg);
+        background-size: cover;
+    }
+}
+
+.Sliding-section-6 {
+    position: relative;
+}
+
+.Sliding-section-6 .window {
+    position: absolute;
+    top: 21%;
+    right: 5%;
+    height: 65%;
+    width: 30%;
+    background-color: #fff;
+    box-shadow: 0px 0px 8px rgb(96, 96, 96);
+    padding: 2.3%;
+}
+
+.window button {
+    width: 100%;
+    margin-top: 20%;
+    color: white;
+    background-color: black;
+    padding: 4% 0;
+    border: 2px solid black;
+    transition: all 0.3s ease;
+}
+
+.window button:hover {
+    background-color: white;
+    border: 2px solid black;
+}
+
+.Sliding-section-6 .carousel-indicators {
+    width: fit-content;
+    height: fit-content;
+    margin: 0;
+    padding: 0;
+    top: 65%;
+    left: 67%;
+}
+
+@media (max-width:980px) {
+    .Sliding-section-6 .carousel-inner {
+        height: 650px;
+    }
+
+    .Sliding-section-6 .carousel-indicators button {
+        height: 40px;
+        width: 40px;
+        border: 2px solid gray;
+        border-radius: 5px;
+    }
+
+    .Sliding-section-6 .window {
+        top: 38%;
+        right: 24%;
+        height: 43%;
+        width: 54%;
+        padding: 1%;
+    }
+
+    .Sliding-section-6 .carousel-indicators {
+        top: 67%;
+        left: 23%;
+    }
+
+    .window button {
+        margin-top: 60px;
+        padding: 2% 0;
+    }
+}
+
+@media (max-width:576px) {
+    .Sliding-section-6 .window {
+        top: 40%;
+        right: 10%;
+        height: 43%;
+        width: 80%;
+        padding: 2%;
+    }
+
+    .Sliding-section-6 .carousel-indicators {
+        top: 68%;
+        left: 12%;
     }
 }
