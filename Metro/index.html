@@ -27,112 +27,112 @@
 
 <body>
     <!-- Nav-bar -->
-    <div
-        class="container px-0 top-header col-lg-12 col-8 ms-auto align-items-center py-4 justify-content-between z-3 position-sticky mynav">
+    <!-- top-header -->
+    <div class="container-fluid stickey-header">
 
-        <div class="small-screen-side-nav col-1">
-            <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample1"
-                aria-controls="offcanvasExample">
-                <i class="fa-solid fa-bars me-2"></i>
-            </button>
-        </div>
-
-        <!-- Nav-start -->
-        <div class="col-lg-1 col-md-2 mr-md-2 col-3 nav-logo">
-            <a href="#">
-                <img src="images/logo.png" class="img-fluid">
-            </a>
-        </div>
-
-        <!-- Nav-middle -->
-        <div class="col-xxl-5 col-lg-7 d-md-flex d-none d-flex nav-middle justify-content-evenly align-items-center">
-            <!-- contact -->
-            <div class="col-4 contact">
-                <a href="#" class="link-item d-flex align-items-center justify-content-between">
-                    <div class="col-2">
-                        <i class="fa-solid fa-phone fa-2x"></i>
-                    </div>
-                    <div class="col-9 link-body">
-                        <p class="p-0 m-0">Contact us 24/7</p>
-                        <p class="p-0 m-0 fw-bold">(+92) 3942 7879</p>
-                    </div>
+        <div class="container-xl container-fluid px-0 top-header col-12 
+        ms-auto align-items-center py-4 justify-content-between z-3 position-sticky mynav">
+            <!-- small side nav -->
+            <div class="small-screen-side-nav col-lg-0 col-1">
+                <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample1"
+                    aria-controls="offcanvasExample">
+                    <i class="fa-solid fa-bars me-2"></i>
+                </button>
+            </div>
+            <!-- Nav-start -->
+            <div class="col-lg-1 col-md-2 mr-md-2 col-3 nav-logo">
+                <a href="#">
+                    <img src="images/logo.png" class="img-fluid">
                 </a>
             </div>
-            <!-- search space -->
-            <div class="col-xxl-7 col-11 search-space d-flex align-items-center">
-                <div class="input-group">
-                    <div class="dropdown">
-                        <button class="btn btn-secondary dropdown-toggle mt-1" type="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
-                            All Categories
-                        </button>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
-                        </ul>
+
+            <!-- Nav-middle -->
+            <div
+                class="col-xxl-5 col-lg-7 d-md-flex d-none d-flex nav-middle justify-content-evenly align-items-center">
+                <!-- contact -->
+                <div class="col-4 contact">
+                    <a href="#" class="link-item d-flex align-items-center justify-content-between">
+                        <div class="col-2">
+                            <i class="fa-solid fa-phone fa-2x"></i>
+                        </div>
+                        <div class="col-9 link-body">
+                            <p class="p-0 m-0">Contact us 24/7</p>
+                            <p class="p-0 m-0 fw-bold">(+92) 3942 7879</p>
+                        </div>
+                    </a>
+                </div>
+                <!-- search space -->
+                <div class="col-xxl-7 col-11 search-space d-flex align-items-center">
+                    <div class="input-group">
+                        <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle mt-1" type="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                All Categories
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </div>
+                        <input type="text" class="form-control" placeholder="Search for products" aria-label="Username"
+                            aria-describedby="basic-addon1">
+                        <span class="input-group-text" id="basic-addon1"><i
+                                class="fa-solid fa-magnifying-glass search-icon"></i></span>
                     </div>
-                    <input type="text" class="form-control" placeholder="Search for products" aria-label="Username"
-                        aria-describedby="basic-addon1">
-                    <span class="input-group-text" id="basic-addon1"><i
-                            class="fa-solid fa-magnifying-glass search-icon"></i></span>
                 </div>
             </div>
-        </div>
 
-        <!-- Nav-end -->
-        <div class="col-xxl-4 col-md-2 col-2 nav-end">
-            <div class="col-3 icon-remove">
-                <a href="#" class="d-flex align-items-center link-item">
-                    <span><img src="images/english.png" class="col-2 img-fluid"> English
-                        <i class="fa-solid fa-angle-down down-arrow"></i></span>
-                </a>
-            </div>
-            <div class="col-2 icon-remove">
-                <a href="#" class="link-item">
-                    <span>USD</span>
-                    <i class="fa-solid fa-angle-down down-arrow"></i>
-                </a>
-            </div>
-            <div class="col-3 icon-remove">
-                <a href="#" class="link-item">
-                    <span>
-                        <i class="fa-solid fa-user icon-size"></i> Account
-                    </span>
-                </a>
-            </div>
-            <div class="col-xxl-1 col-5 position-relative">
-                <a href="#" class="link-item position-relative">
+            <!-- Nav-end -->
+            <div class="col-xxl-4 col-md-2 col-2 nav-end">
+                <div class="col-3 icon-remove">
+                    <a href="#" class="d-flex align-items-center link-item">
+                        <span><img src="images/english.png" class="col-2 img-fluid"> English
+                            <i class="fa-solid fa-angle-down down-arrow"></i></span>
+                    </a>
+                </div>
+                <div class="col-2 icon-remove">
+                    <a href="#" class="link-item">
+                        <span>USD</span>
+                        <i class="fa-solid fa-angle-down down-arrow"></i>
+                    </a>
+                </div>
+                <div class="col-3 icon-remove">
+                    <a href="#" class="link-item">
+                        <span>
+                            <i class="fa-solid fa-user icon-size"></i> Account
+                        </span>
+                    </a>
+                </div>
+                <div class="col-xxl-1 col-5 position-relative">
+                    <a href="#" class="link-item position-relative">
                         <i class="fa-regular fa-heart icon-size"></i>
-                    <span class="position-absolute top-0 start-100 translate-middle badge rounded-circle">
-                        0
-                        <span class="visually-hidden">unread messages</span> 
-                    </span>
+                        <span class="position-absolute top-0 start-100 translate-middle badge rounded-circle">
+                            0
+                            <span class="visually-hidden">unread messages</span>
+                        </span>
                     </a>
-            </div>
-            <div class="col-xxl-1 col-5 position-relative">
-                <a href="#" class="link-item position-relative">
+                </div>
+                <div class="col-xxl-1 col-5 position-relative">
+                    <a href="#" class="link-item position-relative">
                         <i class="fa-solid fa-cart-shopping icon-size"></i>
-                    <span class="position-absolute top-0 start-100 translate-middle badge rounded-circle">
-                        0
-                        <span class="visually-hidden">unread messages</span> 
-                    </span>
+                        <span class="position-absolute top-0 start-100 translate-middle badge rounded-circle">
+                            0
+                            <span class="visually-hidden">unread messages</span>
+                        </span>
                     </a>
+                </div>
             </div>
-        </div>
 
+        </div>
     </div>
+
     <hr class="p-0 m-0">
-    <div class="container-fluid bottom-header">
+    <!-- bottom-header -->
+    <div class="container-fluid bottom-header d-xl-block d-none">
         <div class="container p-0">
             <nav class="navbar navbar-expand-lg p-0">
-                <div class="container-fluid">
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false"
-                        aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+                <div class="container-fluid p-0">
                     <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0 p-0 align-items-center">
                             <li class="nav-item me-4 py-2 border-end d-xxl-block d-none">
@@ -143,43 +143,70 @@
                                     <i class="fa-solid fa-angle-down down-arrow me-2"></i>
                                 </a>
                             </li>
-
-                            <!-- <a class="nav-link active " aria-current="page" href="#">
-                                        <i class="fa-solid fa-bars me-2"></i>
-                                        <span class="fw-bold">SHOP BY CATEGORIES</span>
-                                        <i class="fa-solid fa-angle-down down-arrow me-2"></i>
-                                    </a> -->
                             <li class="nav-item me-4 py-2 home-pages">
                                 <a href="#" class="link-item">
                                     <span>Home pages</span>
                                     <i class="fa-solid fa-angle-down down-arrow"></i>
                                 </a>
-                                <div class="container-fluid sub-home-pages">
-
-                                    <div class="card" style="width: 18rem;">
-                                        <img src="images/mega-home-1.jpg" class="card-img-top" alt="...">
-                                        <div class="card-body">
-                                            <a href="#" class="link-item">
-                                                <p class="card-text">Super-market01</p>
-                                            </a>
+                                <div class="container-fluid sub-home-pages row">
+                                    <div class="col-3 p-2">
+                                        <div class="card">
+                                            <img src="images/mega-home-1.jpg" class="card-img-top" alt="...">
+                                            <div class="card-body">
+                                                <a href="#" class="link-item">
+                                                    <p class="card-text">Super-market01</p>
+                                                </a>
+                                            </div>
                                         </div>
                                     </div>
-                                    <div class="card" style="width: 18rem;">
-                                        <img src="images/mega-home-1.jpg" class="card-img-top" alt="...">
-                                        <div class="card-body">
-                                            <p class="card-text">Super-market02</p>
+                                    <div class="col-3 p-2">
+                                        <div class="card">
+                                            <img src="images/mega-home-1.jpg" class="card-img-top" alt="...">
+                                            <div class="card-body">
+                                                <a href="#" class="link-item">
+                                                    <p class="card-text">Super-market01</p>
+                                                </a>
+                                            </div>
                                         </div>
                                     </div>
-                                    <div class="card" style="width: 18rem;">
-                                        <img src="images/mega-home-1.jpg" class="card-img-top" alt="...">
-                                        <div class="card-body">
-                                            <p class="card-text"></p>
+                                    <div class="col-3 p-2">
+                                        <div class="card">
+                                            <img src="images/mega-home-1.jpg" class="card-img-top" alt="...">
+                                            <div class="card-body">
+                                                <a href="#" class="link-item">
+                                                    <p class="card-text">Super-market01</p>
+                                                </a>
+                                            </div>
                                         </div>
                                     </div>
-                                    <div class="card" style="width: 18rem;">
-                                        <img src="images/mega-home-1.jpg" class="card-img-top" alt="...">
-                                        <div class="card-body">
-                                            <p class="card-text"></p>
+                                    <div class="col-3 p-2">
+                                        <div class="card">
+                                            <img src="images/mega-home-1.jpg" class="card-img-top" alt="...">
+                                            <div class="card-body">
+                                                <a href="#" class="link-item">
+                                                    <p class="card-text">Super-market01</p>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-3 p-2">
+                                        <div class="card">
+                                            <img src="images/mega-home-1.jpg" class="card-img-top" alt="...">
+                                            <div class="card-body">
+                                                <a href="#" class="link-item">
+                                                    <p class="card-text">Super-market01</p>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-3 p-2">
+                                        <div class="card">
+                                            <img src="images/mega-home-1.jpg" class="card-img-top" alt="...">
+                                            <div class="card-body">
+                                                <a href="#" class="link-item">
+                                                    <p class="card-text">Super-market01</p>
+                                                </a>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -252,7 +279,7 @@
                     </div>
                     <div class="carousel-inner">
                         <div class="carousel-item active" data-bs-interval="10000">
-                            <img src="images/slide 3.jpg" class="d-block w-100 img-fluid" alt="...">
+                            <img src="images/banner-vertical-menu-1.jpeg" class="d-block w-100 img-fluid" alt="...">
                             <div class="carousel-caption ">
                                 <h4>Limited time offer</h4>
                                 <h2 class="fs-1 fw-bold">Up To 20% instant Camera</h2>
@@ -261,7 +288,7 @@
                             </div>
                         </div>
                         <div class="carousel-item" data-bs-interval="2000">
-                            <img src="images/Untitled.jpg" class="d-block w-100" alt="...">
+                            <img src="images/cat-2.jpeg" class="d-block w-100" alt="...">
                             <div class="carousel-caption">
                                 <h4>Limited time offer</h4>
                                 <h2 class="fs-1 fw-bold">Up To 20% instant Camera</h2>
@@ -282,21 +309,30 @@
                 </div>
             </div>
 
-            <div class="col-lg-4 bg-dark col-12 side-div p-0">
-                <div class="col-12 sub-side-div bg-primary">
-                    <div class="First">
-                        <h6>black Friday</h6>
-                        <h2 class="fw-bold">Up To 20% instant Camera</h2>
-                        <p class="mb-4">Over 100 items</p>
-                        <button type="button" class="btn btn-outline-dark">Shop Now</button>
+            <div class="col-lg-4 col-12 side-div p-0">
+                <div class="col-12 sub-side-div item p-0">
+                    <div class="bg-wrapper h100-w100"  style="border-radius: 0% !important;">
+                        <img src="images/banner1-demo1.jpeg" class="h100-w100">
+                        <div class="body-banner-2and3">
+                            <h6 style="letter-spacing: 1px;">black Friday</h6>
+                            <h2 class="fw-bold">Big Sale Eyeshadow</h2>
+                            <p class="mb-4">Over 100 items</p>
+                            <button type="button" class="btn btn-outline-dark">Shop Now</button>
+                        </div>
                     </div>
                 </div>
-                <div class="col-12 sub-side-div bg-danger">
-                    <div class="First">
-                        <h5>Limited time offer</h5>
-                        <h2 class="fw-bold">Big Sale Eyeshadow</h2>
-                        <p class="mb-4">Over 100 items</p>
-                        <button type="button" class="btn btn-outline-dark">Shop Now</button>
+                <div class="col-12 sub-side-div item p-0">
+                    <div class="bg-wrapper h100-w100 " style="border-radius: 0% !important;">
+                        <img src="images/banner2-demo1.jpeg" class="h100-w100 rounded-0">
+                        <div class="body-banner-2and3">
+                            <h6 style="letter-spacing: 1px;">NEW COLLECTION</h6>
+                            <h2 class="fw-bold">Puffer Jacket 30% off</h2>
+                            <p class="mb-4">Best jacket in year</p>
+                            <button type="button" class="btn btn-outline-dark">Shop Now</button>
+                        </div>
+                        <div class="sale-side-div-2">
+                            <span class="mb-3">$</span><span class="fs-2">29</span>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -1106,49 +1142,283 @@
     <!-- End of Fifth Section -->
 
     <!-- canvas -->
-
+    <!-- Canvas For the nav Bar -->
     <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample1" aria-labelledby="offcanvasExampleLabel">
-        <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-        </div>
-        <div class="offcanvas-body">
-            <div>
-                Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images,
-                lists, etc.
+        <div class="offcanvas-header p-0">
+            <div class="row w-100 g-0 align-items-center">
+
+                <!-- Left-->
+                <div class="col-2 bg-black d-flex justify-content-center align-items-center" style="height: 50px;">
+                    <i class="fa-solid fa-bars text-white"></i>
+                </div>
+
+                <!-- Middle-->
+                <div class="col-8 bg-secondary-subtle d-flex justify-content-center align-items-center"
+                    style="height: 50px;">
+                    <p class="fw-bold text-uppercase m-0">Shop by Categories +</p>
+                </div>
+
+                <!-- Right-->
+                <div class="col-2 bg-secondary-subtle d-flex justify-content-center align-items-center"
+                    style="height: 50px;">
+                    <button type="button" class="btn-close m-0 p-0" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+
             </div>
-            <div class="dropdown mt-3">
-                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
-                    Dropdown button
-                </button>
-                <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Action</a></li>
-                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul>
+        </div>
+
+        <div class="offcanvas-body px-3 pt-0">
+            <ul class="list-unstyled mt-3">
+                <li class="d-flex justify-content-between align-items-center py-2 border-bottom">
+                    <a href="#" class="text-danger fw-bold text-decoration-none">Homepages</a>
+                    <span>+</span>
+                </li>
+                <li class="d-flex justify-content-between align-items-center py-2 border-bottom">
+                    <a href="#" class="text-black fw-bold text-decoration-none">Categories</a>
+                    <span>+</span>
+                </li>
+                <li class="d-flex justify-content-between align-items-center py-2 border-bottom">
+                    <a href="#" class="text-black fw-bold text-decoration-none">Products</a>
+                    <span>+</span>
+                </li>
+                <li class="d-flex justify-content-between align-items-center py-2 border-bottom">
+                    <a href="#" class="text-black fw-bold text-decoration-none">Pages</a>
+                    <span>+</span>
+                </li>
+                <li class="d-flex justify-content-between align-items-center py-2 border-bottom">
+                    <a href="#" class="text-black fw-bold text-decoration-none">About us</a>
+                    <span>+</span>
+                </li>
+                <li class="d-flex justify-content-between align-items-center py-2 border-bottom">
+                    <a href="#" class="text-black fw-bold text-decoration-none">Blog</a>
+                </li>
+                <li class="d-flex align-items-center py-2 border-bottom">
+                    <i class="fa-solid fa-ticket me-2"></i>
+                    <a href="#" class="text-black fw-bold text-decoration-none">Best Discount</a>
+                </li>
+                <li class="d-flex justify-content-between align-items-center py-2 border-bottom text-muted">
+                    <span>Recently viewed</span>
+                    <span>+</span>
+                </li>
+            </ul>
+
+            <div class="border-top mt-3 pt-3">
+                <div class="d-flex align-items-center mb-3">
+                    <i class="fa-regular fa-heart me-2"></i>
+                    <span>Wishlist (0)</span>
+                </div>
+                <div class="d-flex align-items-center mb-3">
+                    <i class="fa-regular fa-user me-2"></i>
+                    <span>Account</span>
+                </div>
+            </div>
+
+            <div class="border-top mt-3 pt-3">
+                <div class="d-flex flex-wrap gap-2 mb-2">
+                    <span class="text-decoration-underline fw-medium"> <a href="#" class="link-item"> 🇺🇸
+                            English</a></span>
+                    <span><a href="#" class="link-item">🇪🇸 Español</a></span>
+                    <span><a href="#" class="link-item">🇫🇷 Français</a></span>
+                    <span><a href="#" class="link-item">🇵🇹 Português</a></span>
+                </div>
+                <div class="d-flex flex-wrap gap-2">
+                    <span class="fw-bold"> <a href="#" class="link-item">USD</a></span>
+                    <span><a href="#" class="link-item">EUR</a></span>
+                    <span><a href="#" class="link-item">BRL</a></span>
+                </div>
             </div>
         </div>
     </div>
 
-
     <div class="offcanvas offcanvas-start " tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
-        <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-        </div>
-        <div class="offcanvas-body">
-            <div>
-                Some text as placeholder. In real life you can have the elements you
-                have chosen. Like, text, images, lists, etc.
+        <div class="offcanvas-header p-0 m-0">
+            <!-- Left icon (menu icon) -->
+            <div class="col-2 bg-black d-flex justify-content-center align-items-center" style="height: 50px;">
+                <i class="fa-solid fa-bars text-white"></i>
             </div>
-            <div class="dropdown mt-3">
-                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
-                    Dropdown button
-                </button>
-                <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Action</a></li>
-                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                    <li><a class="dropdown-item" href="#">Something else here</a>
+
+            <!-- Middle title -->
+            <div class="col-10 bg-black d-flex justify-content-start align-items-center" style="height: 50px;">
+                <p class="fw-bold text-uppercase m-0 text-white">Shop by Categories</p>
+            </div>
+        </div>
+            <!-- Canva Title -->
+        <div class="offcanvas-body p-0" style="overflow: visible !important;">
+            <div class="pt-0">
+                <ul class="list-unstyled">
+                    <li class="p-3 border-bottom list-item-canva">
+                        <a href="#"
+                            class="text-black text-decoration-none d-flex justify-content-between align-items-center">
+                            <span>
+                                <img src="images/icon-menu-1.png" style="width: 18px; margin-left: 6px;">
+                                Fasion
+                            </span>
+                            <span>+</span>
+                        </a>
+                        <div class="list-item-canva-hover container px-0 ">
+                            <div class="row p-0">
+                                <div class="col-6 px-4 py-4 fs-6">
+                                    <p class="fw-bold">Women</p>
+                                    <ul class="p-0">
+                                        <li class="">
+                                            <a href="#" class="link-item">link</a>
+                                        </li>
+                                        <li class="">
+                                            <a href="#" class="link-item">Accessories</a>
+                                        </li>
+                                        <li class="">
+                                            <a href="#" class="link-item">Blazers</a>
+                                        </li>
+                                        <li class="">
+                                            <a href="#" class="link-item">Coats & Jackets</a>
+                                        </li>
+                                        <li class="">
+                                            <a href="#" class="link-item">Dress</a>
+                                        </li>
+                                        <li class="">
+                                            <a href="#" class="link-item">Shirts</a>
+                                        </li>
+                                        <li class="">
+                                            <a href="#" class="link-item">Shoes</a>
+                                        </li>
+                                        <li class="">
+                                            <a href="#" class="link-item">Shorts</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-6 px-4 py-4">
+                                    <p class="fw-bold">MAN</p>
+                                    <ul class="p-0">
+                                        <li class="">
+                                            <a href="#" class="link-item">link</a>
+                                        </li>
+                                        <li class="">
+                                            <a href="#" class="link-item">Accessories</a>
+                                        </li>
+                                        <li class="">
+                                            <a href="#" class="link-item">Blazers</a>
+                                        </li>
+                                        <li class="">
+                                            <a href="#" class="link-item">Coats & Jackets</a>
+                                        </li>
+                                        <li class="">
+                                            <a href="#" class="link-item">Dress</a>
+                                        </li>
+                                        <li class="">
+                                            <a href="#" class="link-item">Shirts</a>
+                                        </li>
+                                        <li class="">
+                                            <a href="#" class="link-item">Shoes</a>
+                                        </li>
+                                        <li class="">
+                                            <a href="#" class="link-item">Shorts</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-12 p-3 item">
+                                <div class="bg-wrapper">
+                                    <img src="images/banner-vertical-menu-1.jpeg" class="img-fluid">
+                                    <div class="canva-item-first-body">
+                                        <p class="letter-space p-0 mb-1">New Collection</p>
+                                        <h4 class="fw-bold">Bobby <br> Caro Dress</h4>
+                                        <button type="button" class="btn btn-outline-light mt-3">Shop Now</button>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="p-3 border-bottom list-item-canva">
+                        <a href="#"
+                            class="text-black text-decoration-none d-flex justify-content-between align-items-center">
+                            <span>
+                                <img src="images/Icon menu/icon-menu-2.png" style="width: 18px; margin-left: 6px;">
+                                Phone & Tablet
+                            </span>
+                            <span>+</span>
+                        </a>
+                    </li>
+                    <li class="p-3 border-bottom list-item-canva">
+                        <a href="#"
+                            class="text-black text-decoration-none d-flex justify-content-between align-items-center">
+                            <span>
+                                <img src="images/Icon menu/icon-menu-3.png" style="width: 18px; margin-left: 6px;">
+                                Laptop & Computer
+                            </span>
+                            <span>+</span>
+                        </a>
+                    </li>
+                    <li class="p-3 border-bottom list-item-canva">
+                        <a href="#"
+                            class="text-black text-decoration-none d-flex justify-content-between align-items-center">
+                            <span>
+                                <img src="images/Icon menu/icon-menu-4.png" style="width: 18px; margin-left: 6px;">
+                                TV, Audio – Video
+                            </span>
+                            <span>+</span>
+                        </a>
+                    </li>
+                    <li class="p-3 border-bottom list-item-canva">
+                        <a href="#"
+                            class="text-black text-decoration-none d-flex justify-content-between align-items-center">
+                            <span>
+                                <img src="images/icon-menu-1.png" style="width: 18px; margin-left: 6px;">
+                                Fasion
+                            </span>
+                            <span>+</span>
+                        </a>
+                    </li>
+                    <li class="p-3 border-bottom list-item-canva">
+                        <a href="#"
+                            class="text-black text-decoration-none d-flex justify-content-between align-items-center">
+                            <span>
+                                <img src="images/icon-menu-1.png" style="width: 18px; margin-left: 6px;">
+                                Fasion
+                            </span>
+                            <span>+</span>
+                        </a>
+                    </li>
+                    <li class="p-3 border-bottom list-item-canva">
+                        <a href="#"
+                            class="text-black text-decoration-none d-flex justify-content-between align-items-center">
+                            <span>
+                                <img src="images/icon-menu-1.png" style="width: 18px; margin-left: 6px;">
+                                Fasion
+                            </span>
+                            <span>+</span>
+                        </a>
+                    </li>
+                    <li class="p-3 border-bottom list-item-canva">
+                        <a href="#"
+                            class="text-black text-decoration-none d-flex justify-content-between align-items-center">
+                            <span>
+                                <img src="images/icon-menu-1.png" style="width: 18px; margin-left: 6px;">
+                                Fasion
+                            </span>
+                            <span>+</span>
+                        </a>
+                    </li>
+                    <li class="p-3 border-bottom list-item-canva">
+                        <a href="#"
+                            class="text-black text-decoration-none d-flex justify-content-between align-items-center">
+                            <span>
+                                <img src="images/icon-menu-1.png" style="width: 18px; margin-left: 6px;">
+                                Fasion
+                            </span>
+                            <span>+</span>
+                        </a>
+                    </li>
+                    <li class="p-3 border-bottom list-item-canva">
+                        <a href="#"
+                            class="text-black text-decoration-none d-flex justify-content-between align-items-center">
+                            <span>
+                                <img src="images/icon-menu-1.png" style="width: 18px; margin-left: 6px;">
+                                Fasion
+                            </span>
+                            <span>+</span>
+                        </a>
                     </li>
                 </ul>
             </div>
