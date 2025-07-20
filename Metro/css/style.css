@@ -17,76 +17,62 @@
     background-color: white;
     /* needed if things scroll under it */
 }
-
 .top-header {
     justify-content: space-between;
     display: flex;
 }
-
 .nav-logo .nav-logo {
     width: 50%;
 }
-
 .top-header .badge {
     background-color: red !important;
     padding: 15%;
 }
-
 .top-header .small-screen-side-nav {
     display: none;
     justify-content: center;
 }
-
 .top-header .small-screen-side-nav button {
     font-size: larger;
 }
-
 .btn-close {
     border-left: 1px solid white !important;
 }
-
 /* nav-middle */
 .link-item {
     text-decoration: none !important;
     color: black;
     transition: all 0.1s;
 }
-
 .link-item:hover {
     color: rgb(210, 73, 73);
 }
-
 .nav-middle .dropdown button {
     background-color: transparent;
     color: black;
     padding-top: 7%;
     border: none;
 }
-
 .nav-middle .input-group {
     border: none;
     border-radius: 5px;
 }
-
 .nav-middle .input-group .form-control,
 .nav-middle .input-group .input-group-text {
     background-color: transparent;
     border: none;
 }
-
 .nav-middle .input-group .form-control {
     border-left: 2px solid rgb(164, 163, 163);
     height: 25px;
     margin: auto 0;
 }
-
 .nav-middle .search-space {
     background-color: #ebeef0;
     padding: 1%;
     align-items: center;
     border-radius: 10px;
 }
-
 .nav-middle #basic-addon1 {
     color: white;
     background-color: black;
@@ -94,31 +80,25 @@
     border-radius: 5px;
     margin-right: 2%;
 }
-
 /* nav-end */
 .nav-end {
     display: flex;
     justify-content: space-between;
 }
-
 .nav-end .down-arrow {
     font-size: 0.7rem;
 }
-
 .nav-end .link-item {
     text-decoration: none !important;
     color: black;
     transition: all 0.2;
 }
-
 .nav-end .link-item:hover {
     color: rgb(210, 73, 73);
 }
-
 .nav-end .icon-size {
     font-size: 1.4rem;
 }
-
 .nav-end .red-zero {
     height: 65%;
     width: 50%;
@@ -130,12 +110,10 @@
     right: 16%;
     font-size: 0.7rem;
 }
-
 /* buttom navbar */
 .bottom-header .home-pages {
     position: relative;
 }
-
 .bottom-header .sub-home-pages {
     position: absolute;
     justify-content: space-evenly;
@@ -147,16 +125,13 @@
     width: 97rem;
     background-color: white;
 }
-
 .nav-item a.active {
     border-bottom: 0% !important;
 }
-
 /* Canve in the buttom header */
 .list-item-canva {
     position: relative;
 }
-
 .list-item-canva-hover {
     position: absolute;
     top: -50px;
@@ -168,22 +143,18 @@
     visibility: hidden;
     transition: all 0.2s ease;
 }
-
 .list-item-canva:hover .list-item-canva-hover {
     visibility: visible;
     z-index: 100;
     opacity: 1;
 }
-
 .list-item-canva-hover ul {
     list-style: none;
     list-style-position: outside;
 }
-
 .list-item-canva-hover li {
     padding: 3% 0;
 }
-
 .item .canva-item-first-body {
     position: absolute;
     left: 0px;
@@ -192,22 +163,17 @@
     padding-left: 7%;
     color: white;
 }
-
 .letter-space {
     letter-spacing: 2px;
 }
-
 /* Home-pages hover */
 .bottom-header .home-pages:hover .sub-home-pages {
     display: flex;
     z-index: 5;
 }
-
 .bottom-header .sub-home-pages .card:hover {
     box-shadow: 0 0 5px gray;
 }
-
-
 @media (max-width: 1400px) {
     .nav-middle .contact {
         display: none;
@@ -233,37 +199,37 @@
         right: 87px;
     }
 }
-
 @media (max-width : 1204px) {
     .top-header .small-screen-side-nav {
         display: flex;
     }
 }
-
 @media (max-width : 1014px) {
     .nav-middle {
         margin-left: 20px;
     }
 }
-
 @media (max-width : 768px) {
     .top-header {
         justify-content: space-evenly !important;
     }
 }
-
-
-
 /* button-header */
 .bottom-header .link-item {
     text-decoration: none !important;
     color: black;
     transition: all 0.2;
 }
-
 .bottom-header .link-item:hover {
     color: rgb(210, 73, 73);
 }
+
+
+/* --------------------------------------------------------------------------------------------------------- */
+/* -----------------------------------------                        ---------------------------------------- */
+/* -----------------------------------------   || End of navbar||   ---------------------------------------- */
+/* -----------------------------------------                        ---------------------------------------- */
+/* --------------------------------------------------------------------------------------------------------- */
 
 /* second section */
 .second-section .carousel-inner {
@@ -517,19 +483,19 @@
 }
 
 /* forth-section part-2 */
-.forth-section .part-2 .card-img-top {
+.card-img-top {
     width: 100%;
 }
 
-.forth-section .part-2 .carousel-two .item {
+.carousel-two .item {
     border: 1px solid lightgray;
 }
 
-.forth-section .part-2 .carousel-two .card .card-body .icon {
+.carousel-two .card .card-body .icon {
     font-size: 0.8rem;
 }
 
-.forth-section .part-2 .carousel-two .card .cardhover {
+.carousel-two .card .cardhover {
     position: absolute;
     top: 5%;
     right: 8%;
@@ -541,33 +507,33 @@
     transition: all 0.5s ease;
 }
 
-.forth-section .part-2 .carousel-two .card:hover .cardhover {
+.carousel-two .card:hover .cardhover {
     opacity: 1;
     transform: translate(0);
 }
 
-.forth-section .part-2 .carousel-two .card .cardhover button {
+.carousel-two .card .cardhover button {
     background-color: rgb(197, 197, 197) !important;
     border: none;
     color: black;
     font-size: 1.1rem;
 }
 
-.forth-section .part-2 .carousel-two .card .cardhover button:hover {
+.carousel-two .card .cardhover button:hover {
     background-color: black !important;
     color: white;
 }
 
-.forth-section .part-2 .carousel-two .card:hover {
+.carousel-two .card:hover {
     box-shadow: 0px 0px 10px darkgray;
 }
 
-.forth-section .carousel-two {
+.carousel-two {
     position: relative;
     z-index: 1;
 }
 
-.forth-section .carousel-two .owl-nav .owl-prev {
+.handle-owl-nav .carousel-two .owl-nav .owl-prev {
     position: absolute;
     width: 30px;
     height: 50px;
@@ -577,11 +543,12 @@
     font-size: 2rem;
     color: black;
     box-shadow: 0 0 3px rgb(186, 186, 186);
-    display: none;
+    visibility: hidden;
+    opacity: 0;
     transition: all 0.7s ease;
 }
 
-.forth-section .carousel-two .owl-nav .owl-next {
+.handle-owl-nav .carousel-two .owl-nav .owl-next {
     position: absolute;
     width: 30px;
     height: 50px;
@@ -591,13 +558,15 @@
     font-size: 2rem;
     color: black !important;
     box-shadow: 0 0 3px rgb(186, 186, 186);
-    display: none;
+    visibility: hidden;
+    opacity: 0;
     transition: all 0.7s ease;
 }
 
 .carousel-two:hover .owl-nav .owl-prev,
 .carousel-two:hover .owl-nav .owl-next {
-    display: block;
+    visibility: visible;
+    opacity: 1;
 }
 
 .carousel-two .owl-nav .owl-prev:hover,
@@ -801,46 +770,38 @@
 .Sliding-section-6 .carousel-inner {
     height: 500px;
 }
-
 .Sliding-section-6 .carousel-inner img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
-
 .Sliding-section-6 .carousel-control-prev .icon-prev {
     color: transparent !important;
     font-weight: 300;
     font-size: 4rem;
     transition: all 1.5s ease;
 }
-
 .Sliding-section-6 .carousel:hover .carousel-control-prev .icon-prev {
     color: black !important;
 }
-
 .Sliding-section-6 .carousel-control-next .icon-next {
     color: transparent !important;
     font-weight: 300;
     font-size: 4rem;
     transition: all 1.5s ease;
 }
-
 .Sliding-section-6 .carousel:hover .carousel-control-next .icon-next {
     color: black !important;
 }
-
 .Sliding-section-6 .carousel-indicators button {
     height: 50px;
     width: 50px;
     border: 2px solid gray;
     border-radius: 5px;
 }
-
 .Sliding-section-6 .carousel-indicators button.active {
     border: 2px solid blue;
 }
-
 .Sliding-section-6 .carousel-indicators {
     .button-1 {
         background-image: url(../images/Sliding-6/1.jpg);
@@ -858,11 +819,9 @@
         background-size: cover;
     }
 }
-
 .Sliding-section-6 {
     position: relative;
 }
-
 .Sliding-section-6 .window {
     position: absolute;
     top: 21%;
@@ -873,7 +832,6 @@
     box-shadow: 0px 0px 8px rgb(96, 96, 96);
     padding: 2.3%;
 }
-
 .window button {
     width: 100%;
     margin-top: 20%;
@@ -883,12 +841,10 @@
     border: 2px solid black;
     transition: all 0.3s ease;
 }
-
 .window button:hover {
     background-color: white;
     border: 2px solid black;
 }
-
 .Sliding-section-6 .carousel-indicators {
     width: fit-content;
     height: fit-content;
@@ -897,7 +853,6 @@
     top: 65%;
     left: 67%;
 }
-
 @media (max-width:980px) {
     .Sliding-section-6 .carousel-inner {
         height: 650px;
@@ -928,7 +883,6 @@
         padding: 2% 0;
     }
 }
-
 @media (max-width:576px) {
     .Sliding-section-6 .window {
         top: 40%;
@@ -943,3 +897,5 @@
         left: 12%;
     }
 }
+
+/* Section-7 */
