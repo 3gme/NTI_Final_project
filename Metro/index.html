@@ -13,6 +13,7 @@
     <!-- linking bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <!-- linking owl carousel -->
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"
         integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
@@ -112,7 +113,6 @@
             </div>
 
         </div>
-
         <hr class="p-0 m-0">
         <div class="container-fluid bottom-header">
             <div class="container p-0">
@@ -127,11 +127,19 @@
                         <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
                             <ul class="navbar-nav me-auto mb-2 mb-lg-0 p-0 align-items-center">
                                 <li class="nav-item me-4 py-2 border-end d-xxl-block d-none">
-                                    <a class="nav-link active " aria-current="page" href="#">
+                                    <a class="btn nav-link" data-bs-toggle="offcanvas" href="#offcanvasExample"
+                                    role="button" aria-controls="offcanvasExample">
+                                    <i class="fa-solid fa-bars me-2"></i>
+                                    <span class="fw-bold">SHOP BY CATEGORIES</span>
+                                    <i class="fa-solid fa-angle-down down-arrow me-2"></i>
+                                </a>
+                            </li>
+
+                                <!-- <a class="nav-link active " aria-current="page" href="#">
                                         <i class="fa-solid fa-bars me-2"></i>
                                         <span class="fw-bold">SHOP BY CATEGORIES</span>
-                                        <i class="fa-solid fa-angle-down down-arrow me-2"></i></a>
-                                </li>
+                                        <i class="fa-solid fa-angle-down down-arrow me-2"></i>
+                                    </a> -->
                                 <li class="nav-item me-4 py-2 home-pages">
                                     <a href="#" class="link-item">
                                         <span>Home pages</span>
@@ -216,6 +224,7 @@
                 </nav>
             </div>
         </div>
+
 
     </header>
     <!-- -------------End of Nav-Bar----------- -->
@@ -523,7 +532,7 @@
 
             <div class="part-2 my-4">
                 <div class="owl-carousel owl-theme carousel-two py-1 rounded-2 overflow-hidden">
-                    <div class="item rounded-start-2">
+                    <div class="item border border-start-0 rounded-start-2">
                         <div class="card position-relative border-0">
                             <img src="images/automotive-11-500x500.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
@@ -554,7 +563,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="item">
+                    <div class="item border border-start-0">
                         <div class="card position-relative border-0">
                             <img src="images/cosmetic-2-700x700.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
@@ -585,7 +594,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="item ">
+                    <div class="item border border-start-0">
                         <div class="card position-relative border-0">
                             <img src="images/cosmetics-33-700x700.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
@@ -616,7 +625,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="item ">
+                    <div class="item border border-start-0">
                         <div class="card position-relative border-0">
                             <img src="images/cosmetics-40-1-700x700.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
@@ -650,7 +659,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="item ">
+                    <div class="item border border-start-0">
                         <div class="card position-relative border-0">
                             <img src="images/electronic-14-2-700x700.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
@@ -684,7 +693,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="item ">
+                    <div class="item border border-start-0">
                         <div class="card position-relative border-0">
                             <img src="images/electronic-30-6-700x700.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
@@ -718,7 +727,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="item ">
+                    <div class="item border border-start-0">
                         <div class="card position-relative border-0">
                             <img src="images/fashion-10-1-500x500.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
@@ -752,7 +761,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="item rounded-end-2">
+                    <div class="item border border-start-0 rounded-end-2">
                         <div class="card position-relative border-0">
                             <img src="images/furniture-6-700x700.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
@@ -854,25 +863,232 @@
                 </div>
             </div>
         </section>
-        <section class="part-3 container ">
-            <div class="row">
-                <div class="col-md-4">
-                    <div>
-                        <div class="card mb-3" style="max-width: 540px;">
-                            <div class="row g-0">
-                                <div class="col-md-4">
-                                    <img src="..." class="img-fluid rounded-start" alt="...">
+        <section class="part-3 container my-5 ">
+            <div class="main-row row">
+                <div class="position-relative card-wrapper col-lg-4 col-sm-6 col-12 p-0">
+                    <div class="card border border-1 border-t-l  position-absolute">
+                        <div class="row g-0 my-4">
+                            <div class="col-4">
+                                <img src="images/1.jpg" class="img-fluid" alt="...">
+                            </div>
+                            <div class="col-8">
+                                <div class="card-body">
+                                    <a href="#" class="link-item">Nike Air Max Unisex SYSTM Men Sneaker Shoes</a>
+                                    <p class="h5 mt-1">$148</p>
+                                    <span>
+                                        <i class="fa-solid fa-star fs-6"></i>
+                                        <i class="fa-solid fa-star fs-6"></i>
+                                        <i class="fa-solid fa-star fs-6"></i>
+                                        <i class="fa-solid fa-star fs-6"></i>
+                                        <i class="fa-solid fa-star fs-6"></i>
+                                    </span>
                                 </div>
-                                <div class="col-md-8">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Card title</h5>
-                                        <p class="card-text">This is a wider card with supporting text below as a
-                                            natural lead-in to additional content. This content is a little bit longer.
-                                        </p>
-                                        <p class="card-text"><small class="text-body-secondary">Last updated 3 mins
-                                                ago</small></p>
-                                    </div>
+                            </div>
+                        </div>
+                        <div class="card-down">
+                            <div class="row justify-content-evenly container col-12">
+                                <button type="button" class="btn btn-secondary col-8">
+                                    + ADD TO CART
+                                </button>
+                                <button type="button" class="btn btn-secondary col-1">
+                                    <i class="fa-regular fa-heart"></i>
+                                </button>
+                                <button type="button" class="btn btn-secondary col-1">
+                                    <i class="fa-solid fa-code-compare"></i>
+                                </button>
+                                <button type="button" class="btn btn-secondary col-1">
+                                    <i class="fa-solid fa-magnifying-glass"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="position-relative card-wrapper col-lg-4 col-sm-6 col-12 p-0">
+                    <div class="card border border-1 border-t-l  position-absolute">
+                        <div class="row g-0 my-4">
+                            <div class="col-4">
+                                <img src="images/1.jpg" class="img-fluid" alt="...">
+                            </div>
+                            <div class="col-8">
+                                <div class="card-body">
+                                    <a href="#" class="link-item">Nike Air Max Unisex SYSTM Men Sneaker Shoes</a>
+                                    <p class="h5 mt-1">$148</p>
+                                    <span>
+                                        <i class="fa-solid fa-star fs-6"></i>
+                                        <i class="fa-solid fa-star fs-6"></i>
+                                        <i class="fa-solid fa-star fs-6"></i>
+                                        <i class="fa-solid fa-star fs-6"></i>
+                                        <i class="fa-solid fa-star fs-6"></i>
+                                    </span>
                                 </div>
+                            </div>
+                        </div>
+                        <div class="card-down">
+                            <div class="row justify-content-evenly container col-12">
+                                <button type="button" class="btn btn-secondary col-8">
+                                    + ADD TO CART
+                                </button>
+                                <button type="button" class="btn btn-secondary col-1">
+                                    <i class="fa-regular fa-heart"></i>
+                                </button>
+                                <button type="button" class="btn btn-secondary col-1">
+                                    <i class="fa-solid fa-code-compare"></i>
+                                </button>
+                                <button type="button" class="btn btn-secondary col-1">
+                                    <i class="fa-solid fa-magnifying-glass"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="position-relative card-wrapper col-lg-4 col-sm-6 col-12 p-0">
+                    <div class="card border border-1 border-t-l  position-absolute">
+                        <div class="row g-0 my-4">
+                            <div class="col-4">
+                                <img src="images/1.jpg" class="img-fluid" alt="...">
+                            </div>
+                            <div class="col-8">
+                                <div class="card-body">
+                                    <a href="#" class="link-item">Nike Air Max Unisex SYSTM Men Sneaker Shoes</a>
+                                    <p class="h5 mt-1">$148</p>
+                                    <span>
+                                        <i class="fa-solid fa-star fs-6"></i>
+                                        <i class="fa-solid fa-star fs-6"></i>
+                                        <i class="fa-solid fa-star fs-6"></i>
+                                        <i class="fa-solid fa-star fs-6"></i>
+                                        <i class="fa-solid fa-star fs-6"></i>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-down">
+                            <div class="row justify-content-evenly container col-12">
+                                <button type="button" class="btn btn-secondary col-8">
+                                    + ADD TO CART
+                                </button>
+                                <button type="button" class="btn btn-secondary col-1">
+                                    <i class="fa-regular fa-heart"></i>
+                                </button>
+                                <button type="button" class="btn btn-secondary col-1">
+                                    <i class="fa-solid fa-code-compare"></i>
+                                </button>
+                                <button type="button" class="btn btn-secondary col-1">
+                                    <i class="fa-solid fa-magnifying-glass"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="position-relative card-wrapper col-lg-4 col-sm-6 col-12 p-0">
+                    <div class="card border border-1 border-t-l  position-absolute">
+                        <div class="row g-0 my-4">
+                            <div class="col-4">
+                                <img src="images/1.jpg" class="img-fluid" alt="...">
+                            </div>
+                            <div class="col-8">
+                                <div class="card-body">
+                                    <a href="#" class="link-item">Nike Air Max Unisex SYSTM Men Sneaker Shoes</a>
+                                    <p class="h5 mt-1">$148</p>
+                                    <span>
+                                        <i class="fa-solid fa-star fs-6"></i>
+                                        <i class="fa-solid fa-star fs-6"></i>
+                                        <i class="fa-solid fa-star fs-6"></i>
+                                        <i class="fa-solid fa-star fs-6"></i>
+                                        <i class="fa-solid fa-star fs-6"></i>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-down">
+                            <div class="row justify-content-evenly container col-12">
+                                <button type="button" class="btn btn-secondary col-8">
+                                    + ADD TO CART
+                                </button>
+                                <button type="button" class="btn btn-secondary col-1">
+                                    <i class="fa-regular fa-heart"></i>
+                                </button>
+                                <button type="button" class="btn btn-secondary col-1">
+                                    <i class="fa-solid fa-code-compare"></i>
+                                </button>
+                                <button type="button" class="btn btn-secondary col-1">
+                                    <i class="fa-solid fa-magnifying-glass"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="position-relative card-wrapper col-lg-4 col-sm-6 col-12 p-0">
+                    <div class="card border border-1 border-t-l  position-absolute">
+                        <div class="row g-0 my-4">
+                            <div class="col-4">
+                                <img src="images/1.jpg" class="img-fluid" alt="...">
+                            </div>
+                            <div class="col-8">
+                                <div class="card-body">
+                                    <a href="#" class="link-item">Nike Air Max Unisex SYSTM Men Sneaker Shoes</a>
+                                    <p class="h5 mt-1">$148</p>
+                                    <span>
+                                        <i class="fa-solid fa-star fs-6"></i>
+                                        <i class="fa-solid fa-star fs-6"></i>
+                                        <i class="fa-solid fa-star fs-6"></i>
+                                        <i class="fa-solid fa-star fs-6"></i>
+                                        <i class="fa-solid fa-star fs-6"></i>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-down">
+                            <div class="row justify-content-evenly container col-12">
+                                <button type="button" class="btn btn-secondary col-8">
+                                    + ADD TO CART
+                                </button>
+                                <button type="button" class="btn btn-secondary col-1">
+                                    <i class="fa-regular fa-heart"></i>
+                                </button>
+                                <button type="button" class="btn btn-secondary col-1">
+                                    <i class="fa-solid fa-code-compare"></i>
+                                </button>
+                                <button type="button" class="btn btn-secondary col-1">
+                                    <i class="fa-solid fa-magnifying-glass"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="position-relative card-wrapper col-lg-4 col-sm-6 col-12 p-0">
+                    <div class="card border border-1 border-t-l  position-absolute">
+                        <div class="row g-0 my-4">
+                            <div class="col-4">
+                                <img src="images/1.jpg" class="img-fluid" alt="...">
+                            </div>
+                            <div class="col-8">
+                                <div class="card-body">
+                                    <a href="#" class="link-item">Nike Air Max Unisex SYSTM Men Sneaker Shoes</a>
+                                    <p class="h5 mt-1">$148</p>
+                                    <span>
+                                        <i class="fa-solid fa-star fs-6"></i>
+                                        <i class="fa-solid fa-star fs-6"></i>
+                                        <i class="fa-solid fa-star fs-6"></i>
+                                        <i class="fa-solid fa-star fs-6"></i>
+                                        <i class="fa-solid fa-star fs-6"></i>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-down">
+                            <div class="row justify-content-evenly container col-12">
+                                <button type="button" class="btn btn-secondary col-8">
+                                    + ADD TO CART
+                                </button>
+                                <button type="button" class="btn btn-secondary col-1">
+                                    <i class="fa-regular fa-heart"></i>
+                                </button>
+                                <button type="button" class="btn btn-secondary col-1">
+                                    <i class="fa-solid fa-code-compare"></i>
+                                </button>
+                                <button type="button" class="btn btn-secondary col-1">
+                                    <i class="fa-solid fa-magnifying-glass"></i>
+                                </button>
                             </div>
                         </div>
                     </div>
@@ -881,6 +1097,32 @@
         </section>
     </section>
     <!-- End of Fifth Section -->
+
+    <!-- canvas -->
+    <div class="offcanvas offcanvas-start " tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <div>
+                Some text as placeholder. In real life you can have the elements you
+                have chosen. Like, text, images, lists, etc.
+            </div>
+            <div class="dropdown mt-3">
+                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                    Dropdown button
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
 
     <!-- Linking bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"

@@ -41,6 +41,7 @@ $('.owl-carousel-one').owlCarousel({
 $('.carousel-two').owlCarousel({
     loop:true,
     dots:false,
+    margin:1,
     nav:true,
     responsive:{
         0: {

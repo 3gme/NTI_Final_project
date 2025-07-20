@@ -74,18 +74,14 @@
     display: flex;
     justify-content: space-between;
 }
-
 .nav-end .down-arrow {
     font-size: 0.7rem;
 }
-
 .nav-end .link-item {
     text-decoration: none !important;
     color: black;
     transition: all 0.2;
 }
-
-
 
 .nav-end .link-item:hover {
     color: rgb(210, 73, 73);
@@ -94,7 +90,6 @@
 .nav-end .icon-size {
     font-size: 1.4rem;
 }
-
 .nav-end .red-zero {
     height: 65%;
     width: 50%;
@@ -122,6 +117,10 @@
     padding: 0;
     margin: 0;
     background-color: white;
+}
+
+.nav-item a.active{
+    border-bottom: 0% !important;
 }
 
 .bottom-header .home-pages:hover .sub-home-pages {
@@ -388,18 +387,15 @@
     }
 }
 
-
 /* forth section */
 .Flash-Deals {
     font-weight: bold;
 }
-
 .Timer {
     display: flex;
     justify-content: end;
     align-items: center;
 }
-
 .forth-section .Timer .zero-circle {
     background-color: black;
     color: white;
@@ -411,16 +407,13 @@
     text-align: center;
     padding-top: 2.5%;
 }
-
 .More-products {
     display: flex;
     justify-content: end;
 }
-
-a.active{
+.forth-section a.active{
     border-bottom: 2px solid ;
 }
-
 .slide-link {
     position: relative;
     display: inline-block;
@@ -428,7 +421,6 @@ a.active{
     color: black;
     /* Optional */
 }
-
 .slide-link::after {
     content: '';
     position: absolute;
@@ -442,25 +434,20 @@ a.active{
     transform-origin: right;
     transition: transform 0.3s ease;
 }
-
 .slide-link:hover::after {
     transform: scaleX(1);
     transform-origin: left;
 }
-
 /* forth-section part-2 */
 .forth-section .part-2 .card-img-top {
     width: 100%;
 }
-
 .forth-section .part-2 .carousel-two .item {
     border: 1px solid lightgray;
 }
-
 .forth-section .part-2 .carousel-two .card .card-body .icon {
     font-size: 0.8rem;
 }
-
 .forth-section .part-2 .carousel-two .card .cardhover {
     position: absolute;
     top: 5%;
@@ -472,33 +459,27 @@ a.active{
     transform: translateY(20px);
     transition: all 0.5s ease;
 }
-
 .forth-section .part-2 .carousel-two .card:hover .cardhover {
     opacity: 1;
     transform: translate(0);
 }
-
 .forth-section .part-2 .carousel-two .card .cardhover button{
     background-color: rgb(197, 197, 197) !important;
     border: none;
     color: black;
     font-size: 1.1rem;
 }
-
 .forth-section .part-2 .carousel-two .card .cardhover button:hover{
     background-color: black !important;
     color: white;
 }
-
 .forth-section .part-2 .carousel-two .card:hover {
-    box-shadow: 0px 0px 5px darkgray;
+    box-shadow: 0px 0px 10px darkgray;
 }
-
 .forth-section .carousel-two {
     position: relative;
     z-index: 1;
 }
-
 .forth-section .carousel-two .owl-nav .owl-prev {
     position: absolute;
     width: 30px;
@@ -512,7 +493,6 @@ a.active{
     display: none;
     transition: all 0.7s ease;
 }
-
 .forth-section .carousel-two .owl-nav .owl-next {
     position: absolute;
     width: 30px;
@@ -526,18 +506,15 @@ a.active{
     display: none;
     transition: all 0.7s ease;
 }
-
 .carousel-two:hover .owl-nav .owl-prev,
 .carousel-two:hover .owl-nav .owl-next {
     display: block;
 }
-
 .carousel-two .owl-nav .owl-prev:hover,
 .carousel-two .owl-nav .owl-next:hover {
     color: white !important;
     background-color: black !important;
 }
-
 .carousel-two .discount {
     position: absolute;
     background-color: rgb(210, 2, 2);
@@ -548,7 +525,6 @@ a.active{
     font-size: 0.8rem;
     border-radius: 5px;
 }
-
 /* Section five */
 
 .bg-wrapper img{
@@ -613,4 +589,92 @@ a.active{
     font-size: 1rem;
   }
 }
+.fifth-section .part-3 .main-row{
+    border-radius: 10px;
+    display: flex;
+    /* overflow: hidden; */
+    padding: 0;
+}
+.fifth-section .part-3 .main-row .card{
+    height: fit-content;
+    border-radius: 0;
+    border: 0% !important;
+    border-top: 1px solid lightgray;
+    border-right: 1px solid lightgray;
+    border-left: 1px solid lightgray;
+    height: 200px;
+    overflow: hidden;
+    transition: all 0.2s ease;
+}
+.fifth-section .part-3 .main-row .card .card-down{
+    width: 100%;
+    background-color: white;
+    padding: 4% 0%;
+    display: block;
+    align-items: end;
+    border-radius: 10px;
+    z-index: 10 !important;
+}
+.fifth-section .part-3 .main-row .card-wrapper{
+    height:200px;
+}
+.fifth-section .part-3 .main-row .card:hover{
+    z-index: 11 !important;
+    height: 260px;
+    box-shadow: 0 0 3px gray;
+}
+.fifth-section .part-3 .main-row .card:hover .card-down{
+    display: flex;
+    /* box-shadow: 0 0 5px gray; */
+}
+.card-down .row{
+    background-color: white !important;
+}
+.card .row{
+    align-items: center;
+}
+.card .card-down .row{
+    margin-right: 0% !important;
+    margin-left: 0% !important;
+}
+.card-down button{
+    background-color: rgb(197, 197, 197) !important;
+    border: none;
+    color: black;
+    font-size: 1.1rem;
+    text-align: center;
+    padding: 1% !important;
+}
+.card .card-down button:hover{
+    background-color: black !important;
+    color: white;
+}
+.border-t-l{
+    border-top-left-radius: 10px !important;
+}
+.border-t-r{
+    border-top-right-radius: 10px !important;
+}
+.border-b-l{
+    border-bottom-left-radius: 10px !important;
+}
+.border-b-r{
+    border-bottom-right-radius: 10px !important;
+}
 
+@media (max-width:1000px){
+    .fifth-section .part-3 .main-row .card-wrapper{
+        height: 260px;
+    }
+    .fifth-section .part-3 .main-row .card{
+        height: 260px;
+    }
+}
+@media (max-width:576px){
+    .fifth-section .part-3 .main-row .card-wrapper{
+        height: 300px;
+    }
+    .fifth-section .part-3 .main-row .card{
+        height: 300px;
+    }
+}
