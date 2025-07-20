@@ -27,107 +27,116 @@
 
 <body>
     <!-- Nav-bar -->
-    <header class="container-fluid p-0 mynav">
-        <div
-            class="container px-0 top-header col-lg-12 col-8 ms-auto align-items-center py-4 justify-content-between z-3 position-sticky">
+    <div
+        class="container px-0 top-header col-lg-12 col-8 ms-auto align-items-center py-4 justify-content-between z-3 position-sticky mynav">
 
-            <!-- Nav-start -->
-            <div class="col-lg-1 col-md-2 mr-md-2 col-3 nav-logo">
-                <a href="#">
-                    <img src="images/logo.png" class="img-fluid">
+        <div class="small-screen-side-nav col-1">
+            <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample1"
+                aria-controls="offcanvasExample">
+                <i class="fa-solid fa-bars me-2"></i>
+            </button>
+        </div>
+
+        <!-- Nav-start -->
+        <div class="col-lg-1 col-md-2 mr-md-2 col-3 nav-logo">
+            <a href="#">
+                <img src="images/logo.png" class="img-fluid">
+            </a>
+        </div>
+
+        <!-- Nav-middle -->
+        <div class="col-xxl-5 col-lg-7 d-md-flex d-none d-flex nav-middle justify-content-evenly align-items-center">
+            <!-- contact -->
+            <div class="col-4 contact">
+                <a href="#" class="link-item d-flex align-items-center justify-content-between">
+                    <div class="col-2">
+                        <i class="fa-solid fa-phone fa-2x"></i>
+                    </div>
+                    <div class="col-9 link-body">
+                        <p class="p-0 m-0">Contact us 24/7</p>
+                        <p class="p-0 m-0 fw-bold">(+92) 3942 7879</p>
+                    </div>
                 </a>
             </div>
-
-            <!-- Nav-middle -->
-            <div
-                class="col-xxl-5 col-md-7 d-md-flex d-none d-flex nav-middle justify-content-between align-items-center">
-                <!-- contact -->
-                <div class="col-4 contact">
-                    <a href="#" class="link-item d-flex align-items-center justify-content-between">
-                        <div class="col-2">
-                            <i class="fa-solid fa-phone fa-2x"></i>
-                        </div>
-                        <div class="col-9 link-body">
-                            <p class="p-0 m-0">Contact us 24/7</p>
-                            <p class="p-0 m-0 fw-bold">(+92) 3942 7879</p>
-                        </div>
-                    </a>
-                </div>
-                <!-- search space -->
-                <div class="col-xxl-7 col-11 search-space d-flex align-items-center">
-                    <div class="input-group">
-                        <div class="dropdown">
-                            <button class="btn btn-secondary dropdown-toggle mt-1" type="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">
-                                All Categories
-                            </button>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Action</a></li>
-                                <li><a class="dropdown-item" href="#">Another action</a></li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
-                            </ul>
-                        </div>
-                        <input type="text" class="form-control" placeholder="Search for products" aria-label="Username"
-                            aria-describedby="basic-addon1">
-                        <span class="input-group-text" id="basic-addon1"><i
-                                class="fa-solid fa-magnifying-glass search-icon"></i></span>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Nav-end -->
-            <div class="col-xxl-4 col-md-3 col-2 nav-end">
-                <div class="col-3 icon-remove">
-                    <a href="#" class="d-flex align-items-center link-item">
-                        <span><img src="images/english.png" class="col-2 img-fluid"> English
-                            <i class="fa-solid fa-angle-down down-arrow"></i></span>
-                    </a>
-                </div>
-                <div class="col-2 icon-remove">
-                    <a href="#" class="link-item">
-                        <span>USD</span>
-                        <i class="fa-solid fa-angle-down down-arrow"></i>
-                    </a>
-                </div>
-                <div class="col-3 icon-remove">
-                    <a href="#" class="link-item">
-                        <span>
-                            <i class="fa-solid fa-user icon-size"></i> Account
-                        </span>
-                    </a>
-                </div>
-                <div class="col-xxl-1 col-5 position-relative">
-                    <a href="#" class="link-item">
-                        <i class="fa-regular fa-heart icon-size"></i>
-                        <div class="position-absolute red-zero">
-                            <p>0</p>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-xxl-1 col-5 position-relative">
-                    <a href="#" class="link-item"><i class="fa-solid fa-cart-shopping icon-size"></i></a>
-                    <div class="position-absolute red-zero">
-                        <p>0</p>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-        <hr class="p-0 m-0">
-        <div class="container-fluid bottom-header">
-            <div class="container p-0">
-                <nav class="navbar navbar-expand-lg p-0">
-                    <div class="container-fluid">
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03"
-                            aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
+            <!-- search space -->
+            <div class="col-xxl-7 col-11 search-space d-flex align-items-center">
+                <div class="input-group">
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle mt-1" type="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            All Categories
                         </button>
-                        <!-- <a class="navbar-brand" href="#">Navbar</a> -->
-                        <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
-                            <ul class="navbar-nav me-auto mb-2 mb-lg-0 p-0 align-items-center">
-                                <li class="nav-item me-4 py-2 border-end d-xxl-block d-none">
-                                    <a class="btn nav-link" data-bs-toggle="offcanvas" href="#offcanvasExample"
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </div>
+                    <input type="text" class="form-control" placeholder="Search for products" aria-label="Username"
+                        aria-describedby="basic-addon1">
+                    <span class="input-group-text" id="basic-addon1"><i
+                            class="fa-solid fa-magnifying-glass search-icon"></i></span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Nav-end -->
+        <div class="col-xxl-4 col-md-2 col-2 nav-end">
+            <div class="col-3 icon-remove">
+                <a href="#" class="d-flex align-items-center link-item">
+                    <span><img src="images/english.png" class="col-2 img-fluid"> English
+                        <i class="fa-solid fa-angle-down down-arrow"></i></span>
+                </a>
+            </div>
+            <div class="col-2 icon-remove">
+                <a href="#" class="link-item">
+                    <span>USD</span>
+                    <i class="fa-solid fa-angle-down down-arrow"></i>
+                </a>
+            </div>
+            <div class="col-3 icon-remove">
+                <a href="#" class="link-item">
+                    <span>
+                        <i class="fa-solid fa-user icon-size"></i> Account
+                    </span>
+                </a>
+            </div>
+            <div class="col-xxl-1 col-5 position-relative">
+                <a href="#" class="link-item position-relative">
+                        <i class="fa-regular fa-heart icon-size"></i>
+                    <span class="position-absolute top-0 start-100 translate-middle badge rounded-circle">
+                        0
+                        <span class="visually-hidden">unread messages</span> 
+                    </span>
+                    </a>
+            </div>
+            <div class="col-xxl-1 col-5 position-relative">
+                <a href="#" class="link-item position-relative">
+                        <i class="fa-solid fa-cart-shopping icon-size"></i>
+                    <span class="position-absolute top-0 start-100 translate-middle badge rounded-circle">
+                        0
+                        <span class="visually-hidden">unread messages</span> 
+                    </span>
+                    </a>
+            </div>
+        </div>
+
+    </div>
+    <hr class="p-0 m-0">
+    <div class="container-fluid bottom-header">
+        <div class="container p-0">
+            <nav class="navbar navbar-expand-lg p-0">
+                <div class="container-fluid">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+                    <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0 p-0 align-items-center">
+                            <li class="nav-item me-4 py-2 border-end d-xxl-block d-none">
+                                <a class="btn nav-link" data-bs-toggle="offcanvas" href="#offcanvasExample"
                                     role="button" aria-controls="offcanvasExample">
                                     <i class="fa-solid fa-bars me-2"></i>
                                     <span class="fw-bold">SHOP BY CATEGORIES</span>
@@ -135,98 +144,96 @@
                                 </a>
                             </li>
 
-                                <!-- <a class="nav-link active " aria-current="page" href="#">
+                            <!-- <a class="nav-link active " aria-current="page" href="#">
                                         <i class="fa-solid fa-bars me-2"></i>
                                         <span class="fw-bold">SHOP BY CATEGORIES</span>
                                         <i class="fa-solid fa-angle-down down-arrow me-2"></i>
                                     </a> -->
-                                <li class="nav-item me-4 py-2 home-pages">
-                                    <a href="#" class="link-item">
-                                        <span>Home pages</span>
-                                        <i class="fa-solid fa-angle-down down-arrow"></i>
-                                    </a>
+                            <li class="nav-item me-4 py-2 home-pages">
+                                <a href="#" class="link-item">
+                                    <span>Home pages</span>
+                                    <i class="fa-solid fa-angle-down down-arrow"></i>
+                                </a>
+                                <div class="container-fluid sub-home-pages">
 
-                                    <div class="container-fluid sub-home-pages">
-
-                                        <div class="card" style="width: 18rem;">
-                                            <img src="images/mega-home-1.jpg" class="card-img-top" alt="...">
-                                            <div class="card-body">
-                                                <a href="#" class="link-item">
-                                                    <p class="card-text">Super-market01</p>
-                                                </a>
-                                            </div>
-                                        </div>
-                                        <div class="card" style="width: 18rem;">
-                                            <img src="images/mega-home-1.jpg" class="card-img-top" alt="...">
-                                            <div class="card-body">
-                                                <p class="card-text">Super-market02</p>
-                                            </div>
-                                        </div>
-                                        <div class="card" style="width: 18rem;">
-                                            <img src="images/mega-home-1.jpg" class="card-img-top" alt="...">
-                                            <div class="card-body">
-                                                <p class="card-text"></p>
-                                            </div>
-                                        </div>
-                                        <div class="card" style="width: 18rem;">
-                                            <img src="images/mega-home-1.jpg" class="card-img-top" alt="...">
-                                            <div class="card-body">
-                                                <p class="card-text"></p>
-                                            </div>
+                                    <div class="card" style="width: 18rem;">
+                                        <img src="images/mega-home-1.jpg" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <a href="#" class="link-item">
+                                                <p class="card-text">Super-market01</p>
+                                            </a>
                                         </div>
                                     </div>
-                                    </a>
-                                </li>
-                                <li class="nav-item me-4 py-2">
-                                    <a href="#" class="link-item">
-                                        <span>Categories</span>
-                                        <i class="fa-solid fa-angle-down down-arrow"></i></a>
-                                    </a>
-                                </li>
-                                <li class="nav-item me-4 py-2">
-                                    <a href="#" class="link-item">
-                                        <span>Products</span>
-                                        <i class="fa-solid fa-angle-down down-arrow"></i></a>
-                                    </a>
-                                </li>
-                                <li class="nav-item me-4 py-2">
-                                    <a href="#" class="link-item">
-                                        <span>Pages</span>
-                                        <i class="fa-solid fa-angle-down down-arrow"></i></a>
-                                    </a>
-                                </li>
-                                <li class="nav-item me-4 py-2">
-                                    <a href="#" class="link-item">
-                                        <span>About us</span>
-                                    </a>
-                                </li>
-                                <li class="nav-item me-4 py-2">
-                                    <a href="#" class="link-item">
-                                        <span>Blog</span>
-                                    </a>
-                                </li>
-                                <li class="nav-item me-4 py-2">
-                                    <a href="#" class="link-item">
-                                        <i class="fa-solid fa-ticket"></i>
-                                        <span>Best Discount</span>
-                                    </a>
-                                </li>
-                            </ul>
-                            <div class="ms-auto">
+                                    <div class="card" style="width: 18rem;">
+                                        <img src="images/mega-home-1.jpg" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <p class="card-text">Super-market02</p>
+                                        </div>
+                                    </div>
+                                    <div class="card" style="width: 18rem;">
+                                        <img src="images/mega-home-1.jpg" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <p class="card-text"></p>
+                                        </div>
+                                    </div>
+                                    <div class="card" style="width: 18rem;">
+                                        <img src="images/mega-home-1.jpg" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <p class="card-text"></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                </a>
+                            </li>
+                            <li class="nav-item me-4 py-2">
                                 <a href="#" class="link-item">
-                                    <span class="text-end">Recently viewed <i
-                                            class="fa-solid fa-angle-down down-arrow"></i></span>
+                                    <span>Categories</span>
+                                    <i class="fa-solid fa-angle-down down-arrow"></i></a>
                                 </a>
+                            </li>
+                            <li class="nav-item me-4 py-2">
+                                <a href="#" class="link-item">
+                                    <span>Products</span>
+                                    <i class="fa-solid fa-angle-down down-arrow"></i></a>
                                 </a>
-                            </div>
+                            </li>
+                            <li class="nav-item me-4 py-2">
+                                <a href="#" class="link-item">
+                                    <span>Pages</span>
+                                    <i class="fa-solid fa-angle-down down-arrow"></i></a>
+                                </a>
+                            </li>
+                            <li class="nav-item me-4 py-2">
+                                <a href="#" class="link-item">
+                                    <span>About us</span>
+                                </a>
+                            </li>
+                            <li class="nav-item me-4 py-2">
+                                <a href="#" class="link-item">
+                                    <span>Blog</span>
+                                </a>
+                            </li>
+                            <li class="nav-item me-4 py-2">
+                                <a href="#" class="link-item">
+                                    <i class="fa-solid fa-ticket"></i>
+                                    <span>Best Discount</span>
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="ms-auto">
+                            <a href="#" class="link-item">
+                                <span class="text-end">Recently viewed <i
+                                        class="fa-solid fa-angle-down down-arrow"></i></span>
+                            </a>
+                            </a>
                         </div>
                     </div>
-                </nav>
-            </div>
+                </div>
+            </nav>
         </div>
+    </div>
 
 
-    </header>
     <!-- -------------End of Nav-Bar----------- -->
 
 
@@ -1099,6 +1106,31 @@
     <!-- End of Fifth Section -->
 
     <!-- canvas -->
+
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample1" aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <div>
+                Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images,
+                lists, etc.
+            </div>
+            <div class="dropdown mt-3">
+                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                    Dropdown button
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
     <div class="offcanvas offcanvas-start " tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
         <div class="offcanvas-header">
             <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
@@ -1122,8 +1154,6 @@
             </div>
         </div>
     </div>
-
-
     <!-- Linking bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"

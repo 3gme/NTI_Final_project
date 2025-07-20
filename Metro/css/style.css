@@ -8,59 +8,54 @@
     font-family: "Poppins", sans-serif;
 }
 
-
 /* top header */
 .top-header {
     display: flex;
     justify-content: space-between;
 }
-
 .nav-logo .nav-logo {
     width: 50%;
 }
 
+.top-header .badge{
+    background-color: red !important;
+    padding: 15%;
+}
 /* nav-middle */
 .link-item {
     text-decoration: none !important;
     color: black;
     transition: all 0.1s;
 }
-
 .link-item:hover {
     color: rgb(210, 73, 73);
 }
-
 .nav-middle .dropdown button {
     background-color: transparent;
     color: black;
     padding-top: 7%;
     border: none;
 }
-
 .nav-middle .input-group {
     border: none;
     border-radius: 5px;
 }
-
 .nav-middle .input-group .form-control,
 .nav-middle .input-group .input-group-text {
     background-color: transparent;
     border: none;
 }
-
 .nav-middle .input-group .form-control {
     border-left: 2px solid rgb(164, 163, 163);
     height: 25px;
     margin: auto 0;
 }
-
 .nav-middle .search-space {
     background-color: #ebeef0;
     padding: 1%;
     align-items: center;
     border-radius: 10px;
 }
-
 .nav-middle #basic-addon1 {
     color: white;
     background-color: black;
@@ -68,7 +63,6 @@
     border-radius: 5px;
     margin-right: 2%;
 }
-
 /* nav-end */
 .nav-end {
     display: flex;
@@ -82,11 +76,9 @@
     color: black;
     transition: all 0.2;
 }
-
 .nav-end .link-item:hover {
     color: rgb(210, 73, 73);
 }
-
 .nav-end .icon-size {
     font-size: 1.4rem;
 }
@@ -101,7 +93,6 @@
     right: 16%;
     font-size: 0.7rem;
 }
-
 /* buttom navbar */
 .bottom-header .home-pages {
     position: relative;
@@ -201,8 +192,6 @@
     }
 }
 
-
-
 /* button-header */
 .bottom-header .link-item {
     text-decoration: none !important;
@@ -213,7 +202,6 @@
 .bottom-header .link-item:hover {
     color: rgb(210, 73, 73);
 }
-
 
 /* second section */
 .second-section .carousel-inner {
@@ -374,7 +362,6 @@
 .third-section .part-2 .my-link:hover {
     border-bottom: 1px dashed red;
 }
-
 @keyframes bounce {
 
     0%,
@@ -386,7 +373,6 @@
         transform: translateX(6px);
     }
 }
-
 /* forth section */
 .Flash-Deals {
     font-weight: bold;
