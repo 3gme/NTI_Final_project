@@ -1,6 +1,10 @@
 /* Linkin google font Poppins */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+.container{
+    width: 90% !important;
+}
+
 * {
     padding: 0;
     margin: 0;
@@ -87,6 +91,48 @@
     border-radius: 10px;
 }
 
+    .search-space {
+        position: relative;
+    }
+
+    .hover-panel {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: white;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+        padding: 15px;
+        display: none;
+        z-index: 10;
+    }
+
+    .search-space:hover .hover-panel {
+        display: block;
+    }
+
+    .popular-buttons {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-top: 10px;
+    }
+
+    .dropdown-toggle {
+        border-radius: 8px 0 0 8px;
+    }
+
+    .search-icon-btn {
+        background-color: black;
+        color: white;
+        border-radius: 0 8px 8px 0;
+    }
+
+    .dropdown-menu {
+        min-width: 180px;
+    }
+
 .nav-middle #basic-addon1 {
     color: white;
     background-color: black;
@@ -94,6 +140,7 @@
     border-radius: 5px;
     margin-right: 2%;
 }
+
 
 /* nav-end */
 .nav-end {
@@ -115,20 +162,45 @@
     color: rgb(210, 73, 73);
 }
 
-.nav-end .icon-size {
-    font-size: 1.4rem;
+/* Position container */
+.icon-remove {
+    position: relative;
 }
 
-.nav-end .red-zero {
-    height: 65%;
-    width: 50%;
-    border-radius: 50%;
-    background-color: red;
-    color: white;
-    text-align: center;
-    top: -17%;
-    right: 16%;
-    font-size: 0.7rem;
+/* Hide dropdown by default */
+.custom-dropdown {
+    display: none;
+    position: absolute;
+    top: 100%; /* exactly below the <a> */
+    left: 0;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    padding: 10px 0;
+    list-style: none;
+    min-width: 150px;
+    z-index: 1000;
+}
+
+
+.custom-dropdown li a {
+    display: block;
+    padding: 8px 16px;
+    color: #333;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.custom-dropdown li a:hover {
+    background-color: #f1f1f1;
+}
+
+.icon-remove:hover .custom-dropdown {
+    display: block;
+}
+
+
+.nav-end .icon-size {
+    font-size: 1.4rem;
 }
 
 /* buttom navbar */

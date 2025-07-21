@@ -64,40 +64,74 @@
                 </div>
                 <!-- search space -->
                 <div class="col-xxl-7 col-11 search-space d-flex align-items-center">
-                    <div class="input-group">
+                    <div class="input-group w-100">
+                        <!-- Dropdown -->
                         <div class="dropdown">
-                            <button class="btn btn-secondary dropdown-toggle mt-1" type="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">
+                            <button class="btn btn-light dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
                                 All Categories
                             </button>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Action</a></li>
-                                <li><a class="dropdown-item" href="#">Another action</a></li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                <li><a class="dropdown-item" href="#">Smartphones</a></li>
+                                <li><a class="dropdown-item" href="#">Tablets</a></li>
+                                <li><a class="dropdown-item" href="#">Laptops</a></li>
                             </ul>
                         </div>
-                        <input type="text" class="form-control" placeholder="Search for products" aria-label="Username"
-                            aria-describedby="basic-addon1">
-                        <span class="input-group-text" id="basic-addon1"><i
-                                class="fa-solid fa-magnifying-glass search-icon"></i></span>
+
+                        <!-- Search input -->
+                        <input type="text" class="form-control" placeholder="Search for products" aria-label="Search">
+
+                        <!-- Search button -->
+                        <button class="btn search-icon-btn" type="button">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </button>
+                    </div>
+
+                    <!-- Hover panel -->
+                    <div class="hover-panel">
+                        <strong>Popular search</strong>
+                        <div class="popular-buttons">
+                            <button type="button" class="btn btn-outline-dark">smartphone</button>
+                            <button type="button" class="btn btn-outline-dark">tablet</button>
+                            <button type="button" class="btn btn-outline-dark">controller</button>
+                            <button type="button" class="btn btn-outline-dark">furniture</button>
+                            <button type="button" class="btn btn-outline-dark">laptop</button>
+                            <button type="button" class="btn btn-outline-dark">playstation</button>
+                            <button type="button" class="btn btn-outline-dark">womens fashion</button>
+                            <button type="button" class="btn btn-outline-dark">home & decor</button>
+                            <button type="button" class="btn btn-outline-dark">camera</button>
+                        </div>
                     </div>
                 </div>
             </div>
 
             <!-- Nav-end -->
             <div class="col-xxl-4 col-md-2 col-2 nav-end">
-                <div class="col-3 icon-remove">
-                    <a href="#" class="d-flex align-items-center link-item">
-                        <span><img src="images/english.png" class="col-2 img-fluid"> English
-                            <i class="fa-solid fa-angle-down down-arrow"></i></span>
+                <div class="col-3 icon-remove position-relative">
+                    <a href="#" class="d-flex align-items-center link-item dropdown-toggle-custom">
+                        <span>
+                            <img src="images/english.png" class="col-2 img-fluid"> English
+                            <i class="fa-solid fa-angle-down down-arrow"></i>
+                        </span>
                     </a>
+                    <ul class="custom-dropdown">
+                        <li><a href="#">Arabic</a></li>
+                        <li><a href="#">French</a></li>
+                        <li><a href="#">German</a></li>
+                    </ul>
                 </div>
-                <div class="col-2 icon-remove">
-                    <a href="#" class="link-item">
+                <div class="col-2 icon-remove position-relative">
+                    <a href="#" class="link-item dropdown-toggle-custom">
                         <span>USD</span>
                         <i class="fa-solid fa-angle-down down-arrow"></i>
                     </a>
+                    <ul class="custom-dropdown">
+                        <li><a href="#">EUR</a></li>
+                        <li><a href="#">GBP</a></li>
+                        <li><a href="#">EGP</a></li>
+                    </ul>
                 </div>
+
                 <div class="col-3 icon-remove">
                     <a href="#" class="link-item">
                         <span>
@@ -559,7 +593,7 @@
     <!-- Forth section -->
     <div class="container-fluid forth-section py-5">
         <div class="container mx-auto p-0">
-            <div class="part-1 d-flex align-items-center">
+            <div class="part-1 row p-0 align-items-center">
                 <h3 class="Flash-Deals col-lg-7 col-md-8 col-12">Flash Deals</h3>
                 <div class="Timer ms-auto col-lg-3 col-md-4 col-12 align-items-center">
                     <span class="text-muted">End in</span>
