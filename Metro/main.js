@@ -65,3 +65,23 @@ $('.carousel-two').owlCarousel({
         }
     }
 })
+$('.carousel-three').owlCarousel({
+    loop:true,
+    dots:false,
+    margin:10,
+    nav:true,
+    responsive:{  
+        200: {
+            items: 1,
+            nav:true
+        },
+        480: {
+            items: 2,
+            nav:true
+        },
+        1200: {
+            items: 3,
+            nav:true
+        }
+    }
+})
