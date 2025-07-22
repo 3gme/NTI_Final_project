@@ -190,3 +190,35 @@
     font-size: 0.8rem;
     border-radius: 5px;
 }
+
+
+/* Area 2 */
+#Area2 button {
+    background-color: rgb(197, 197, 197) !important;
+    border: none;
+    color: black;
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+}
+
+#Area2 button:hover {
+    background-color: black !important;
+    color: white;
+}
+.small-font{
+    font-size: 0.8rem;
+}
+.discount2{
+    height: 30px ;
+    width: 40px ;
+    background-color: red;
+    color:white;
+    align-items: center;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    border-radius: 4px !important;
+    text-align: center;
+    top: 17px;
+    left: 17px;
+}

@@ -146,9 +146,51 @@ const data = [
     </div>
 </div>
 // */
+/*
+                    <!-- <div class="col-12 row border border-2 rounded-2 ">
+                        <div class="col-3 position-relative">
+                            <img src="images/Shop – Merto/cosmetics-34-300x300.jpeg" class="img-fluid">
+                            <div class="discount2">
+                                35
+                            </div>
+                        </div>
+                        <div class="col-9 p-3 row">
+                            <div class="col-6 card-body">
+                                <a href="#" class="link-item fs-5">Nike Air max unisex system shoes</a>
+                                <div class="fw-bold mt-2">
+                                    <span>$price</span>
+                                    <span>$old price</span>
+                                </div>
+                                <hr>
+                                <ul class="list-unstyled">
+                                    <li class=" ">
+                                        → machine wash
+                                    </li>
+                                    <li class=" ">
+                                        → machine wash
+                                    </li>
+                                    <li class=" ">
+                                        → machine wash
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-5 p-3">
+                                <button type="button" class="btn w-100 d-block">QUICK VIEW</button>
+                                <button type="button" class="btn w-100 mt-2 d-block">+ADD TO CART</button>
+                                <a href="#" class="link-item mute small-font fw-light">Add to wishlist</a>
+                                <a href="#" class="link-item mute small-font fw-light ms-4">Add to compare</a>
+                            </div>
+                        </div> -->
+
+*/
 
 
 let area = document.querySelector("#Area")
+let area2 = document.querySelector("#Area2")
+let onlysale = document.querySelector("#onlysale");
+let rectangles = document.querySelector("#rectangles");
+let squares = document.querySelector("#squares")
+let defaultscreen = true;
 let res = data;
 let showOnlySale = false;
 
@@ -161,7 +203,6 @@ const addNewElement = function(parent , type , text , href , source , classes ,s
     if(classes) element.className = classes;
     return element;
 }
-
 
 const draw = function(){
     area.innerHTML=""
@@ -192,20 +233,68 @@ const draw = function(){
         icon = addNewElement(button,"i" ,null ,null ,null ,"fa-solid fa-cart-shopping")
     });
 }
-const draw2 = function(){
 
-}
+const draw2 = function () {
+    area2.innerHTML = "";
+    res = showOnlySale ? data.filter(item => item.sale) : data;
+    console.log(res);
+    res.forEach(element => {
+        let product = addNewElement(area2, "div", null, null, null, "col-12 row border border-2 rounded-2 mb-3");
+        let imgWrapper = addNewElement(product, "div", null, null, null, "col-3 position-relative");
+        addNewElement(imgWrapper, "img", null, null, element.img, "img-fluid");
+        if (element.sale) {
+            addNewElement(imgWrapper, "div", element.saleValue + "%", null, null, "discount2");
+        }
 
+        let detailsWrapper = addNewElement(product, "div", null, null, null, "col-9 p-3 row");
 
+        let info = addNewElement(detailsWrapper, "div", null, null, null, "col-6 card-body");
+        let a = addNewElement(info, "a", null, "#", null, "link-item fs-5");
+        addNewElement(a, "p", element.link);
 
-let onlysale = document.querySelector("#onlysale");
+        let priceWrapper = addNewElement(info, "div", null, null, null, "fw-bold mt-2");
+        addNewElement(priceWrapper, "span", "$" + element.price);
+        if (element.oldprice) {
+            addNewElement(priceWrapper, "span", "$" + element.oldprice, null, null, "text-muted text-decoration-line-through ms-2");
+        }
+
+        addNewElement(info, "hr");
+
+        let ul = addNewElement(info, "ul", null, null, null, "list-unstyled");
+        element.features?.forEach(feature => {
+            addNewElement(ul, "li", "→ " + feature);
+        });
+        let actions = addNewElement(detailsWrapper, "div", null, null, null, "col-5 p-3");
+        addNewElement(actions, "button", "QUICK VIEW", null, null, "btn w-100 d-block");
+        addNewElement(actions, "button", "+ADD TO CART", null, null, "btn w-100 mt-2 d-block");
+
+        let wishlist = addNewElement(actions, "a", "Add to wishlist", "#", null, "link-item mute small-font fw-light");
+        let compare = addNewElement(actions, "a", "Add to compare", "#", null, "link-item mute small-font fw-light ms-4");
+    });
+};
 
 onlysale.addEventListener("click",function(e){
         showOnlySale = !showOnlySale
-        draw()
+        area.innerHTML=""
+        area2.innerHTML=""
+        defaultscreen? draw() :draw2();
     })
     
+squares.addEventListener("click" , (e) =>{
+    console.log(e)
+    area2.innerHTML="";
+    defaultscreen = true;
+    draw();
+})
+rectangles.addEventListener("click" , (e) =>{
+    console.log(e)
+    area.innerHTML="";
+    defaultscreen = false;
+    draw2();
+})
+
 draw();
+
 
 
 
