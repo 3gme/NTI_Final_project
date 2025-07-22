@@ -5,7 +5,7 @@ const data = [
         link: "nike Air Max unisex systm men sneaker shoes",
         price: "148",
         oldprice: "154",
-        sale: true,
+        sale: false,
         saleValue: 35
     },
     {
@@ -22,7 +22,7 @@ const data = [
         link: "nike Air Max unisex systm men sneaker shoes",
         price: "148",
         oldprice: null,
-        sale: false,
+        sale: true,
         saleValue: 35
 
     },
