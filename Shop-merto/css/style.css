@@ -8,3 +8,77 @@
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
 }
+
+.buttons button {
+    background-color: #ebeef0;
+    transition: all 0.3s ease;
+}
+
+.buttons button:hover {
+    background-color: white;
+    border: 1px solid black;
+}
+
+
+/* left div */
+.left-div{
+    height: fit-content;
+}
+/* Colors */
+.color-list-item {
+    display: flex;
+    align-items: center;
+    padding-bottom: 4px;
+}
+
+.color-list-item .color-square {
+    width: 17px;
+    height: 17px;
+    border: 0;
+    border-radius: 2px;
+    margin-right: 10px;
+}
+
+.color-list-item:hover .mute {
+    color: red;
+}
+
+/* Brand */
+.brands{
+    height: 200px;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    scrollbar-width: thin;
+}
+.checkbox .box{
+    height: 17px;
+    width: 17px;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 3px;
+    transition: 0.2s ease all;
+    font-size: 0.7rem;
+}
+.checkbox .box .true{
+    text-align: center;
+    margin-left: 3px;
+    opacity: 0;  
+    visibility: hidden;  
+    color: white;
+    transition: all 0.2s ease;
+}
+
+.fs{
+    font-size: 1rem;
+}
+
+.checkbox li:hover .box{
+    background-color :black;
+}
+.checkbox li:hover .box .true{
+    opacity: 1;
+    visibility: visible;
+}
+.checkbox li {
+    padding-bottom: 14px;
+}
