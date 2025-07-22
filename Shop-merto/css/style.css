@@ -82,3 +82,69 @@
 .checkbox li {
     padding-bottom: 14px;
 }
+
+
+/*  */
+/*  */
+.item {
+    border: 1px solid lightgray;
+    padding: 0% !important;
+}
+.card .card-body .icon {
+    font-size: 0.8rem;
+}
+.card .cardhover {
+    position: absolute;
+    top: 5%;
+    right: 8%;
+    display: flex;
+    flex-direction: column;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.5s ease;
+}
+
+@media (max-width:1200px){
+    .card .cardhover{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.card:hover .cardhover {
+    opacity: 1;
+    transform: translate(0);
+    border-radius: 0;
+}
+
+.card .cardhover button {
+    background-color: rgb(197, 197, 197) !important;
+    border: none;
+    color: black;
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+}
+
+.card .cardhover button:hover {
+    background-color: black !important;
+    color: white;
+}
+
+.card:hover {
+    box-shadow: 0px 0px 10px darkgray;
+}
+.card-img-top {
+    width: 100%;
+    border-radius:0;
+}
+
+.discount {
+    position: absolute;
+    background-color: rgb(210, 2, 2);
+    color: white;
+    padding: 2% 3%;
+    top: 6%;
+    left: 7%;
+    font-size: 0.8rem;
+    border-radius: 5px;
+}
