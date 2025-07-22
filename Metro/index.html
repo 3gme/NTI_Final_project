@@ -25,7 +25,7 @@
     <title>Document</title>
 </head>
 
-<body>
+<body id="allbody">
     <!---------------- Nav-bar ------------------>
 
     <!-- top-header -->
@@ -79,7 +79,7 @@
                         </div>
 
                         <!-- Search input -->
-                        <input type="text" class="form-control" placeholder="Search for products" aria-label="Search">
+                        <input type="text" class="form-control" id="searchplace" placeholder="Search for products" aria-label="Search">
 
                         <!-- Search button -->
                         <button class="btn search-icon-btn" type="button">
@@ -88,7 +88,7 @@
                     </div>
 
                     <!-- Hover panel -->
-                    <div class="hover-panel">
+                    <div class="hover-panel d-none" id="searchwindow">
                         <strong>Popular search</strong>
                         <div class="popular-buttons">
                             <button type="button" class="btn btn-outline-dark">smartphone</button>

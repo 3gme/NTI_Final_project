@@ -85,3 +85,12 @@ $('.carousel-three').owlCarousel({
         }
     }
 })
+
+let searchwindow = document.querySelector("#searchwindow")
+let searchplace = document.querySelector("#searchplace")
+let allbody = document.querySelector("#allbody")
+searchplace.addEventListener("click" ,function(e){
+    console.log(e.target)
+    if(e.target == searchplace) searchwindow.classList.toggle("d-none")
+    
+})
