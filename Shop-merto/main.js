@@ -119,18 +119,6 @@ const data = [
 ];
 
 
-let area = document.querySelector("#Area")
-
-const addNewElement = function(parent , type , text , href , source , classes ,sale){
-    let element = document.createElement(type);
-    parent.appendChild(element);
-    if(text) element.textContent = text;
-    if(href) element.href = href;
-    if(source) element.src = source;
-    if(classes) element.className = classes;
-    return element;
-}
-
 //
 /*
 <div class="item col-4 border border-start-0 rounded-start-2">
@@ -159,8 +147,26 @@ const addNewElement = function(parent , type , text , href , source , classes ,s
 </div>
 // */
 
+
+let area = document.querySelector("#Area")
+let res = data;
+let showOnlySale = false;
+
+const addNewElement = function(parent , type , text , href , source , classes ,sale){
+    let element = document.createElement(type);
+    parent.appendChild(element);
+    if(text) element.textContent = text;
+    if(href) element.href = href;
+    if(source) element.src = source;
+    if(classes) element.className = classes;
+    return element;
+}
+
+
 const draw = function(){
-    data.forEach(element => {
+    area.innerHTML=""
+    res = showOnlySale ? data.filter(item => item.sale) : data; 
+    res.forEach(element => {
         let innerdiv = addNewElement(area , "div" , null , null ,null , "item col-xxl-3 col-xl-4 col-lg-6 col-md-4 col-6 border border-start-0 rounded-start-2")
         let card = addNewElement(innerdiv,"div" ,null,null,null,"card position-relative border-0")
         let image = addNewElement(card , "img" ,null ,null,element.img,"card-img-top")
@@ -186,6 +192,21 @@ const draw = function(){
         icon = addNewElement(button,"i" ,null ,null ,null ,"fa-solid fa-cart-shopping")
     });
 }
+const draw2 = function(){
+
+}
 
 
+
+let onlysale = document.querySelector("#onlysale");
+
+onlysale.addEventListener("click",function(e){
+        showOnlySale = !showOnlySale
+        draw()
+    })
+    
 draw();
+
+
+
+

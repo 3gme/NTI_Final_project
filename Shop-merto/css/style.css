@@ -84,7 +84,49 @@
 }
 
 
+.checkbox button:hover .box{
+    background-color :black;
+}
+.checkbox button:hover .box .true{
+    opacity: 1;
+    visibility: visible;
+}
+.checkbox button {
+    padding-bottom: 14px;
+}
+
+
 /*  */
+.Right .dropdown{
+    background-color: white ;
+    border: 0 1px 0 0;
+}
+.Right .dropdown:hover .dropdown-menu{
+    opacity: 1;
+    transition: all 0.3s ease;
+}
+.Right .dropdown .dropdown-menu{
+ box-shadow: 0px 0px 5px gray;
+ opacity: 0;
+ display: block !important;
+ top: 100%;
+ right: 0;
+}
+
+.mostright button{
+    background-color: white;
+    height: 30px;
+    width: 30px;
+    text-align: center;
+    border: none;
+    color: gray;
+    margin-right: 15px;
+    transition: all 0.3s ease;
+}
+.mostright button:hover{
+    color: black;
+}
+
 /*  */
 .item {
     border: 1px solid lightgray;
