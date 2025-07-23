@@ -1,0 +1,24 @@
+.heading{
+    padding-top: 2%;
+    font-size: 5rem;
+    font-weight: bold;
+}
+
+.top{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+}
+
+
+
+.btn-dark:hover{
+    background-color: rgb(159, 18, 18) !important;
+}
+
+@media (max-width:980px){
+    .heading{
+        font-size: 3rem;
+    }
+}
