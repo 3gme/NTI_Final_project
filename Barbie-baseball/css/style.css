@@ -252,3 +252,17 @@
 /*  */
 /*  */
 /*  */
+.table{
+    margin-bottom: 0% !important;
+}
+
+.nav-tabs .nav-item .nav-link{
+    color: gray;
+    font-size: 2rem;
+    border: none;
+}
+.nav-tabs .nav-item .active{
+    border-bottom: 2px solid black !important;
+}
+
+
