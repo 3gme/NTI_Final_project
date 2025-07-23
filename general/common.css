@@ -73,3 +73,7 @@
 .mute{
     color: rgb(143, 142, 142);
 }
+
+.small{
+    font-size: 0.8rem;
+}

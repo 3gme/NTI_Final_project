@@ -1,0 +1,254 @@
+.img-btn{
+    border: 1px solid rgb(220, 219, 219);
+    height: 80px ;
+    width: 80px;
+    border-radius: 7px;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    transition: all 0.3s ease;
+}
+
+.img-btn:hover{
+    border:1px solid black;
+}
+
+#btn-1{
+    background-image: url(../images/btns/btn-1.jpg);
+}
+#btn-2{
+    background-image: url(../images/btns/btn-2.jpg);
+}
+#btn-3{
+    background-image: url(../images/btns/btn-3.jpg);
+}
+#btn-4{
+    background-image: url(../images/btns/btn-4.jpg);
+}
+
+.active-btn{
+    border: 1px solid black;
+}
+
+.img-cover img{
+    border:1px solid rgb(194, 194, 194);
+    border-radius: 7px;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.img-cover{
+    display: none;
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+.active-img{
+    display: block;
+    opacity: 1;
+}
+
+
+@media (max-width:768px){
+    .img-btn{
+        height: 50px;
+        width: 50px;
+    }
+}
+
+.in-stock{
+    display: flex;
+    width: 80px ;
+    height: 26px;
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: green;
+    background-color: rgb(211, 224, 211);
+}
+
+
+/* counter-box */
+.add , .buy{
+    font-size: 0.9rem;
+    font-weight: bold;
+    border-radius: 7px;
+}
+.add{
+    padding: 2% 10% ;
+    background-color: black;
+    border: 1px solid black;
+    color: white;
+    transition: all 0.3s ease;
+}
+.buy{
+    padding: 2% 6% ;
+    background-color: red;
+    border:solid 1px red;
+    transition: all 0.3s ease;
+}
+
+.add:hover{
+    background-color: white;
+    color: black;
+}
+.buy:hover{
+    background-color: white;
+    color :red;
+}
+
+/* 
+ */
+
+.payment-window{
+    top :15%;
+    left: 3%;
+    width: 40%;
+    color:white !important;
+}
+.btn-container{
+    position: absolute;
+    top:  50%;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+}
+.view-more-btn{
+  background-color: #657e72;
+  color: white;
+  border: 2px solid #658073;
+  border-radius: 0.375rem;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  height: 40px !important;
+}
+.view-more-btn:hover {
+  background-color: white;
+  color: #198754;
+  border-color: #198754;
+}
+@media (max-width: 768px) {
+  .payment-window {
+    text-align: center;
+    margin-bottom: 80px; /* space for the button */
+    width: 100%;
+    font-size: 0.5 !important;
+  }
+    .btn-container{
+        top: 70%;
+    }
+
+}
+
+/*  */
+/*  */
+/*  */
+.card-img-top {
+    width: 100%;
+}
+
+.carousel-two .item {
+    border: 1px solid lightgray;
+}
+
+.carousel-two .card .card-body .icon {
+    font-size: 0.8rem;
+}
+
+.carousel-two .card .cardhover {
+    position: absolute;
+    top: 5%;
+    right: 8%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.5s ease;
+}
+
+.carousel-two .card:hover .cardhover {
+    opacity: 1;
+    transform: translate(0);
+}
+
+.carousel-two .card .cardhover button {
+    background-color: rgb(197, 197, 197) !important;
+    border: none;
+    color: black;
+    font-size: 1.1rem;
+}
+
+.carousel-two .card .cardhover button:hover {
+    background-color: black !important;
+    color: white;
+}
+
+.carousel-two .card:hover {
+    box-shadow: 0px 0px 10px darkgray;
+}
+
+.carousel-two {
+    position: relative;
+    z-index: 1;
+}
+
+.handle-owl-nav .carousel-two .owl-nav .owl-prev {
+    position: absolute;
+    width: 30px;
+    height: 50px;
+    top: 45%;
+    left: -5px;
+    background-color: white;
+    font-size: 2rem;
+    color: black;
+    box-shadow: 0 0 3px rgb(186, 186, 186);
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.7s ease;
+}
+
+.handle-owl-nav .carousel-two .owl-nav .owl-next {
+    position: absolute;
+    width: 30px;
+    height: 50px;
+    top: 45%;
+    right: -5px;
+    background-color: white !important;
+    font-size: 2rem;
+    color: black !important;
+    box-shadow: 0 0 3px rgb(186, 186, 186);
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.7s ease;
+}
+
+.carousel-two:hover .owl-nav .owl-prev,
+.carousel-two:hover .owl-nav .owl-next {
+    visibility: visible;
+    opacity: 1;
+}
+
+.carousel-two .owl-nav .owl-prev:hover,
+.carousel-two .owl-nav .owl-next:hover {
+    color: white !important;
+    background-color: black !important;
+}
+
+.carousel-two .discount {
+    position: absolute;
+    background-color: rgb(210, 2, 2);
+    color: white;
+    padding: 2% 3%;
+    top: 6%;
+    left: 7%;
+    font-size: 0.8rem;
+    border-radius: 5px;
+}
+
+/*  */
+/*  */
+/*  */

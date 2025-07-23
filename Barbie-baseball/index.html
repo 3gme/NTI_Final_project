@@ -1,0 +1,1136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="../general/nav.css">
+    <link rel="stylesheet" href="../general/footer.css">
+    <link rel="stylesheet" href="../general/common.css">
+
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- linking bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- linking owl carousel -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css" />
+</head>
+
+<body>
+    <!-- ------------------------------------- -->
+    <!---------------- Nav-bar ------------------>
+    <!-- ------------------------------------- -->
+
+    <!-- top-header -->
+    <div class="container-fluid stickey-header">
+
+        <div class="container-xl container-fluid px-0 top-header col-12 
+        ms-auto align-items-center py-4 justify-content-between z-3 position-sticky mynav">
+            <!-- small side nav -->
+            <div class="small-screen-side-nav col-lg-0 col-1">
+                <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample1"
+                    aria-controls="offcanvasExample">
+                    <i class="fa-solid fa-bars me-2"></i>
+                </button>
+            </div>
+            <!-- Nav-start -->
+            <div class="col-lg-1 col-md-2 mr-md-2 col-3 nav-logo">
+                <a href="#">
+                    <img src="images/logo.png" class="img-fluid">
+                </a>
+            </div>
+
+            <!-- Nav-middle -->
+            <div
+                class="col-xxl-5 col-lg-7 d-md-flex d-none d-flex nav-middle justify-content-evenly align-items-center">
+                <!-- contact -->
+                <div class="col-4 contact">
+                    <a href="#" class="link-item d-flex align-items-center justify-content-between">
+                        <div class="col-2">
+                            <i class="fa-solid fa-phone fa-2x"></i>
+                        </div>
+                        <div class="col-9 link-body">
+                            <p class="p-0 m-0">Contact us 24/7</p>
+                            <p class="p-0 m-0 fw-bold">(+92) 3942 7879</p>
+                        </div>
+                    </a>
+                </div>
+                <!-- search space -->
+                <div class="col-xxl-7 col-11 search-space d-flex align-items-center">
+                    <div class="input-group w-100">
+                        <!-- Dropdown -->
+                        <div class="dropdown">
+                            <button class="btn btn-light dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                All Categories
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Smartphones</a></li>
+                                <li><a class="dropdown-item" href="#">Tablets</a></li>
+                                <li><a class="dropdown-item" href="#">Laptops</a></li>
+                            </ul>
+                        </div>
+
+                        <!-- Search input -->
+                        <input type="text" class="form-control" placeholder="Search for products" aria-label="Search">
+
+                        <!-- Search button -->
+                        <button class="btn search-icon-btn" type="button">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </button>
+                    </div>
+
+                    <!-- Hover panel -->
+                    <div class="hover-panel">
+                        <strong>Popular search</strong>
+                        <div class="popular-buttons">
+                            <button type="button" class="btn btn-outline-dark">smartphone</button>
+                            <button type="button" class="btn btn-outline-dark">tablet</button>
+                            <button type="button" class="btn btn-outline-dark">controller</button>
+                            <button type="button" class="btn btn-outline-dark">furniture</button>
+                            <button type="button" class="btn btn-outline-dark">laptop</button>
+                            <button type="button" class="btn btn-outline-dark">playstation</button>
+                            <button type="button" class="btn btn-outline-dark">womens fashion</button>
+                            <button type="button" class="btn btn-outline-dark">home & decor</button>
+                            <button type="button" class="btn btn-outline-dark">camera</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Nav-end -->
+            <div class="col-xxl-4 col-md-2 col-2 nav-end">
+                <div class="col-3 icon-remove position-relative">
+                    <a href="#" class="d-flex align-items-center link-item dropdown-toggle-custom">
+                        <span>
+                            <img src="images/english.png" class="col-2 img-fluid"> English
+                            <i class="fa-solid fa-angle-down down-arrow"></i>
+                        </span>
+                    </a>
+                    <ul class="custom-dropdown">
+                        <li><a href="#">Arabic</a></li>
+                        <li><a href="#">French</a></li>
+                        <li><a href="#">German</a></li>
+                    </ul>
+                </div>
+                <div class="col-2 icon-remove position-relative">
+                    <a href="#" class="link-item dropdown-toggle-custom">
+                        <span>USD</span>
+                        <i class="fa-solid fa-angle-down down-arrow"></i>
+                    </a>
+                    <ul class="custom-dropdown">
+                        <li><a href="#">EUR</a></li>
+                        <li><a href="#">GBP</a></li>
+                        <li><a href="#">EGP</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-3 icon-remove">
+                    <a href="#" class="link-item">
+                        <span>
+                            <i class="fa-solid fa-user icon-size"></i> Account
+                        </span>
+                    </a>
+                </div>
+                <div class="col-xxl-1 col-5 position-relative">
+                    <a href="#" class="link-item position-relative">
+                        <i class="fa-regular fa-heart icon-size"></i>
+                        <span class="position-absolute top-0 start-100 translate-middle badge rounded-circle">
+                            0
+                            <span class="visually-hidden">unread messages</span>
+                        </span>
+                    </a>
+                </div>
+                <div class="col-xxl-1 col-5 position-relative">
+                    <a href="#" class="link-item position-relative">
+                        <i class="fa-solid fa-cart-shopping icon-size"></i>
+                        <span class="position-absolute top-0 start-100 translate-middle badge rounded-circle">
+                            0
+                            <span class="visually-hidden">unread messages</span>
+                        </span>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <hr class="p-0 m-0">
+
+    <!-- bottom-header -->
+    <div class="container-fluid bottom-header d-xl-block d-none border-bottom">
+        <div class="container p-0">
+            <nav class="navbar navbar-expand-lg p-0">
+                <div class="container-fluid p-0">
+                    <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0 p-0 align-items-center">
+                            <li class="nav-item me-4 py-2 border-end d-xxl-block d-none">
+                                <a class="btn nav-link" data-bs-toggle="offcanvas" href="#offcanvasExample"
+                                    role="button" aria-controls="offcanvasExample">
+                                    <i class="fa-solid fa-bars me-2"></i>
+                                    <span class="fw-bold">SHOP BY CATEGORIES</span>
+                                    <i class="fa-solid fa-angle-down down-arrow me-2"></i>
+                                </a>
+                            </li>
+                            <li class="nav-item me-4 py-2 home-pages">
+                                <a href="#" class="link-item">
+                                    <span>Home pages</span>
+                                    <i class="fa-solid fa-angle-down down-arrow"></i>
+                                </a>
+                                <div class="container-fluid sub-home-pages row">
+                                    <div class="col-3 p-2">
+                                        <div class="card">
+                                            <img src="images/mega-home-1.jpg" class="card-img-top" alt="...">
+                                            <div class="card-body">
+                                                <a href="#" class="link-item">
+                                                    <p class="card-text">Super-market01</p>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-3 p-2">
+                                        <div class="card">
+                                            <img src="images/mega-home-1.jpg" class="card-img-top" alt="...">
+                                            <div class="card-body">
+                                                <a href="#" class="link-item">
+                                                    <p class="card-text">Super-market01</p>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-3 p-2">
+                                        <div class="card">
+                                            <img src="images/mega-home-1.jpg" class="card-img-top" alt="...">
+                                            <div class="card-body">
+                                                <a href="#" class="link-item">
+                                                    <p class="card-text">Super-market01</p>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-3 p-2">
+                                        <div class="card">
+                                            <img src="images/mega-home-1.jpg" class="card-img-top" alt="...">
+                                            <div class="card-body">
+                                                <a href="#" class="link-item">
+                                                    <p class="card-text">Super-market01</p>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-3 p-2">
+                                        <div class="card">
+                                            <img src="images/mega-home-1.jpg" class="card-img-top" alt="...">
+                                            <div class="card-body">
+                                                <a href="#" class="link-item">
+                                                    <p class="card-text">Super-market01</p>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-3 p-2">
+                                        <div class="card">
+                                            <img src="images/mega-home-1.jpg" class="card-img-top" alt="...">
+                                            <div class="card-body">
+                                                <a href="#" class="link-item">
+                                                    <p class="card-text">Super-market01</p>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                </a>
+                            </li>
+                            <li class="nav-item me-4 py-2">
+                                <a href="#" class="link-item">
+                                    <span>Categories</span>
+                                    <i class="fa-solid fa-angle-down down-arrow"></i></a>
+                                </a>
+                            </li>
+                            <li class="nav-item me-4 py-2">
+                                <a href="#" class="link-item">
+                                    <span>Products</span>
+                                    <i class="fa-solid fa-angle-down down-arrow"></i></a>
+                                </a>
+                            </li>
+                            <li class="nav-item me-4 py-2">
+                                <a href="#" class="link-item">
+                                    <span>Pages</span>
+                                    <i class="fa-solid fa-angle-down down-arrow"></i></a>
+                                </a>
+                            </li>
+                            <li class="nav-item me-4 py-2">
+                                <a href="#" class="link-item">
+                                    <span>About us</span>
+                                </a>
+                            </li>
+                            <li class="nav-item me-4 py-2">
+                                <a href="#" class="link-item">
+                                    <span>Blog</span>
+                                </a>
+                            </li>
+                            <li class="nav-item me-4 py-2">
+                                <a href="#" class="link-item">
+                                    <i class="fa-solid fa-ticket"></i>
+                                    <span>Best Discount</span>
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="ms-auto">
+                            <a href="#" class="link-item">
+                                <span class="text-end">Recently viewed <i
+                                        class="fa-solid fa-angle-down down-arrow"></i></span>
+                            </a>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!-- -------------------------------------- -->
+    <!-- -------------End of Nav-Bar----------- -->
+    <!-- -------------------------------------- -->
+
+
+    <secition class="container-fluid p-0">
+        <div class="container mx-auto fow p-0 align-items-center pt-1">
+            <span class="px-1 small"><a href="../Metro/index.html" class="slide-link">Home</a></span>
+            <span class="px-1 small"><i class="fa-solid fa-angle-right"></i></span>
+            <span class="px-1 small"><a href="../Shop-merto/index.html" class="slide-link">Shop</a></span>
+            <span class="px-1 small"><i class="fa-solid fa-angle-right"></i></span>
+            <span class="px-1 small"><a href="../Shop-merto/index.html" class="slide-link">Fashion</a></span>
+            <span class="px-1 small"><i class="fa-solid fa-angle-right"></i></span>
+            <span class="px-1 small"><a href="../Shop-merto/index.html" class="slide-link">Woman</a></span>
+            <span class="px-1 small"><i class="fa-solid fa-angle-right"></i></span>
+            <span class="px-1 small"><a href="../Shop-merto/index.html" class="slide-link">Skirts</a></span>
+            <span class="px-1 small"><i class="fa-solid fa-angle-right"></i></span>
+            <span class="px-1 mute small">Barbie Baseball Hat Cap Berkshire Fashions New</span>
+        </div>
+    </secition>
+
+    <section class="container-fluid p-0 py-3">
+        <div class="container-lg container-fluid px-0 mx-auto row p-0">
+            <div class="col-1 me-lg-0 me-3 p-0">
+                <button id="btn-1" class="img-btn active-btn"></button>
+                <button id="btn-2" class="img-btn"></button>
+                <button id="btn-3" class="img-btn"></button>
+                <button id="btn-4" class="img-btn"></button>
+            </div>
+
+            <div class="col-lg-6 col-10 p-0">
+                <div class="img-cover active-img"><img src="images/big-slides/fashion-8.jpg"></div>
+                <div class="img-cover"><img src="images/big-slides/fashion-9.jpg"></div>
+                <div class="img-cover"><img src="images/big-slides/fashion-10.jpg"></div>
+                <div class="img-cover"><img src="images/big-slides/fashion-11.jpg"></div>
+            </div>
+
+
+
+            <div class="col-lg-5 col-12 px-4">
+                <span class="mute">Zara</span>
+                <h3>Barbie Baseball Hat Cap Berkshire Fashions New</h3>
+                <span class="small"><i class="fa-regular fa-star"></i></span>
+                <span class="small"><i class="fa-regular fa-star"></i></span>
+                <span class="small"><i class="fa-regular fa-star"></i></span>
+                <span class="small"><i class="fa-regular fa-star"></i></span>
+                <span class="small"><i class="fa-regular fa-star"></i></span>
+                <span class="mute small ms-2">(0 Reviews)</span>
+                <span><a href="#" class="mute slide-link small ms-2">Write a review</a></span>
+                <ul class="list-unstyled my-4 p-0 ">
+                    <li><i class="fa-solid fa-check text-success"></i> Unique Design</li>
+                    <li><i class="fa-solid fa-check text-success"></i> premium Material </li>
+                    <li><i class="fa-solid fa-check text-success"></i> Classic & Versatile </li>
+                </ul>
+                <h3>$12</h3>
+                <span class="in-stock">in stock</span>
+                <div class="d-flex align-items-center gap-2 mt-4">
+                    <div class="bg-secondary-subtle border-0 d-flex align-items-center  rounded-2">
+                        <button class="bg-transparent py-2  border-0 fs-5 col-3" id="decrease">-</button>
+                        <span class="bg-transparent p-2 px-4 col-6 text-center" id="number">1</span>
+                        <button class="bg-transparent py-2  border-0 fs-5 col-3" id="increase">+</button>
+                    </div>
+                    <button class="add">+ ADD TO CART</button>
+                    <button class="buy">BUY NOW</button>
+                </div>
+                <div class="mt-4">
+                    <span ><a href="#" class="small link-item"> <i class="fa-regular fa-heart me-2"></i>Add to wishlist</span></a>
+                    <span ><a href="#"class="small link-item ms-5"><i class="fa-solid fa-arrow-right-arrow-left me-2"></i>Add to compare</span></a>
+                </div>
+                <hr class="mute my-3">
+                <div class="py-1">
+                    <span class="mute me-2 "> SKU: </span> <span>kgbt48c82s</span>
+                </div>
+                <div class="py-1">
+                    <span class="mute me-2 "> categories: </span> <span>Shots,Skirts</span>
+                </div>
+                <div class="d-flex align-items-center gap-3 mt-3">
+                    <a href="#" class="link-item fs"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" class="link-item fs"><i class="fa-brands fa-pinterest-p"></i></a>
+                    <a href="#" class="link-item fs"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="#" class="link-item fs"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container-fluid p-0 py-5">
+        <section class="container mx-auto bg-success rounded-4">
+            <div class="position-relative">
+
+                <div class="d-flex justify-content-end class">
+                    <img src="images/payments-2-1.png" class="img-fluid">
+                </div>
+                <div class="position-absolute payment-window">
+                    <h5 class="mb-1">Earn Cash Back For The Things You Buy Every Where</h5>
+                    <p class="p-0 m-0">Application via Merto. <a href="#" class="slide-link text-white">Terms & Conditions.</a></p>
+                </div>
+                <div class="btn-container">
+                    <button class="view-more-btn">View More</button>
+                </div>
+            </div>
+        </section>
+    </section>
+
+    <section class="container-fluid py-5">
+        <section class="container p-0">
+            <ul class="nav nav-tabs" id="myTab" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button"
+                        role="tab" aria-controls="home-tab-pane" aria-selected="true">Home</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button"
+                        role="tab" aria-controls="profile-tab-pane" aria-selected="false">Profile</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane" type="button"
+                        role="tab" aria-controls="contact-tab-pane" aria-selected="false">Contact</button>
+                </li>
+            </ul>
+            <div class="tab-content" id="myTabContent">
+                <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
+                    ...</div>
+                <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">...
+                </div>
+                <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">
+                      <div class="container my-5">
+    <div class="bg-white p-5 rounded bg-secondary-subtle">
+      <h4 class="mb-4">Be the first to review <strong>“Barbie Baseball Hat Cap Berkshire Fashions New”</strong></h4>
+
+      <form>
+        <!-- Rating -->
+        <div class="mb-3">
+          <label class="form-label d-block">Your rating <span class="text-danger">*</span></label>
+          <div>
+            <span><i class="fas fa-star"></i></span>
+            <span><i class="fas fa-star"></i></span>
+            <span><i class="fas fa-star"></i></span>
+            <span><i class="fas fa-star"></i></span>
+            <span><i class="fas fa-star"></i></span>
+          </div>
+        </div>
+
+        <div class="mb-3">
+          <label class="form-label">Choose pictures (max size: 50KB, max files: 2)</label>
+          <input class="form-control" type="file" multiple accept="image/*">
+        </div>
+
+        <div class="row">
+          <div class="col-md-6 mb-3">
+            <label for="name" class="form-label">Name <span class="text-danger">*</span></label>
+            <input type="text" id="name" class="form-control" required>
+          </div>
+
+          <div class="col-md-6 mb-3">
+            <label for="email" class="form-label">Email <span class="text-danger">*</span></label>
+            <input type="email" id="email" class="form-control" required>
+          </div>
+        </div>
+
+        <div class="mb-4">
+          <label for="review" class="form-label">Your review <span class="text-danger">*</span></label>
+          <textarea id="review" class="form-control" rows="5" required></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-dark">SUBMIT</button>
+      </form>
+                </div>
+            </div>
+        </section>
+    </section>
+
+    <div class="container-fluid forth-section py-5">
+            <div class="container mx-auto p-0">
+                <div class="part-2 my-4 handle-owl-nav">
+                    <div class="owl-carousel owl-theme carousel-two py-1 rounded-2 overflow-hidden">
+                        <div class="item border border-start-0 rounded-start-2">
+                            <div class="card position-relative border-0">
+                                <img src="images/owl/fashion-13-300x300.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <a href="#" class="link-item m-0 p-0">
+                                        <p class="lh-sm">TOOLS 34 Low Profile Hydraulic Trolley</p>
+                                    </a>
+                                    <span class="fw-bold fs-5">$767</span>
+                                    <span class="text-muted text-decoration-line-through">$837</span>
+                                    <br>
+                                    <span>
+                                        <i class="fa-solid fa-star icon"></i>
+                                        <i class="fa-solid fa-star icon"></i>
+                                        <i class="fa-solid fa-star icon"></i>
+                                        <i class="fa-solid fa-star icon"></i>
+                                        <i class="fa-solid fa-star icon"></i>
+                                    </span>
+                                </div>
+                                <div class="cardhover">
+                                    <button type="button" class="btn btn-secondary"><i
+                                            class="fa-regular fa-heart"></i></button>
+                                    <button type="button" class="btn btn-secondary"><i
+                                            class="fa-solid fa-code-compare"></i></button>
+                                    <button type="button" class="btn btn-secondary"><i
+                                            class="fa-solid fa-magnifying-glass"></i></button>
+                                    <button type="button" class="btn btn-secondary"><i
+                                            class="fa-solid fa-cart-shopping"></i></button>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item border border-start-0">
+                            <div class="card position-relative border-0">
+                                <img src="images/owl/fashion-14-300x300.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <a href="#" class="link-item m-0 p-0">
+                                        <p class="lh-sm">TOOLS 34 Low Profile Hydraulic Trolley</p>
+                                    </a>
+                                    <span class="fw-bold fs-5">$767</span>
+                                    <span class="text-muted text-decoration-line-through">$837</span>
+                                    <br>
+                                    <span>
+                                        <i class="fa-solid fa-star icon"></i>
+                                        <i class="fa-solid fa-star icon"></i>
+                                        <i class="fa-solid fa-star icon"></i>
+                                        <i class="fa-solid fa-star icon"></i>
+                                        <i class="fa-solid fa-star icon"></i>
+                                    </span>
+                                </div>
+                                <div class="cardhover">
+                                    <button type="button" class="btn btn-secondary"><i
+                                            class="fa-regular fa-heart"></i></button>
+                                    <button type="button" class="btn btn-secondary"><i
+                                            class="fa-solid fa-code-compare"></i></button>
+                                    <button type="button" class="btn btn-secondary"><i
+                                            class="fa-solid fa-magnifying-glass"></i></button>
+                                    <button type="button" class="btn btn-secondary"><i
+                                            class="fa-solid fa-cart-shopping"></i></button>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item border border-start-0">
+                            <div class="card position-relative border-0">
+                                <img src="images/owl/fashion-15-4-300x300.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <a href="#" class="link-item m-0 p-0">
+                                        <p class="lh-sm">TOOLS 34 Low Profile Hydraulic Trolley</p>
+                                    </a>
+                                    <span class="fw-bold fs-5">$767</span>
+                                    <span class="text-muted text-decoration-line-through">$837</span>
+                                    <br>
+                                    <span>
+                                        <i class="fa-solid fa-star icon"></i>
+                                        <i class="fa-solid fa-star icon"></i>
+                                        <i class="fa-solid fa-star icon"></i>
+                                        <i class="fa-solid fa-star icon"></i>
+                                        <i class="fa-solid fa-star icon"></i>
+                                    </span>
+                                </div>
+                                <div class="cardhover">
+                                    <button type="button" class="btn btn-secondary"><i
+                                            class="fa-regular fa-heart"></i></button>
+                                    <button type="button" class="btn btn-secondary"><i
+                                            class="fa-solid fa-code-compare"></i></button>
+                                    <button type="button" class="btn btn-secondary"><i
+                                            class="fa-solid fa-magnifying-glass"></i></button>
+                                    <button type="button" class="btn btn-secondary"><i
+                                            class="fa-solid fa-cart-shopping"></i></button>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item border border-start-0">
+                            <div class="card position-relative border-0">
+                                <img src="images/owl/fashion-18-300x300.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <a href="#" class="link-item m-0 p-0">
+                                        <p class="lh-sm">TOOLS 34 Low Profile Hydraulic Trolley</p>
+                                    </a>
+                                    <span class="fw-bold fs-5">$767</span>
+                                    <span class="text-muted text-decoration-line-through">$837</span>
+                                    <br>
+                                    <span>
+                                        <i class="fa-solid fa-star icon"></i>
+                                        <i class="fa-solid fa-star icon"></i>
+                                        <i class="fa-solid fa-star icon"></i>
+                                        <i class="fa-solid fa-star icon"></i>
+                                        <i class="fa-solid fa-star icon"></i>
+                                    </span>
+                                </div>
+                                <div class="discount">
+                                    -35%
+                                </div>
+                                <div class="cardhover">
+                                    <button type="button" class="btn btn-secondary"><i
+                                            class="fa-regular fa-heart"></i></button>
+                                    <button type="button" class="btn btn-secondary"><i
+                                            class="fa-solid fa-code-compare"></i></button>
+                                    <button type="button" class="btn btn-secondary"><i
+                                            class="fa-solid fa-magnifying-glass"></i></button>
+                                    <button type="button" class="btn btn-secondary"><i
+                                            class="fa-solid fa-cart-shopping"></i></button>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item border border-start-0">
+                            <div class="card position-relative border-0">
+                                <img src="images/owl/fashion-6-300x300.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <a href="#" class="link-item m-0 p-0">
+                                        <p class="lh-sm">TOOLS 34 Low Profile Hydraulic Trolley</p>
+                                    </a>
+                                    <span class="fw-bold fs-5">$767</span>
+                                    <span class="text-muted text-decoration-line-through">$837</span>
+                                    <br>
+                                    <span>
+                                        <i class="fa-solid fa-star icon"></i>
+                                        <i class="fa-solid fa-star icon"></i>
+                                        <i class="fa-solid fa-star icon"></i>
+                                        <i class="fa-solid fa-star icon"></i>
+                                        <i class="fa-solid fa-star icon"></i>
+                                    </span>
+                                </div>
+                                <div class="discount">
+                                    -35%
+                                </div>
+                                <div class="cardhover">
+                                    <button type="button" class="btn btn-secondary"><i
+                                            class="fa-regular fa-heart"></i></button>
+                                    <button type="button" class="btn btn-secondary"><i
+                                            class="fa-solid fa-code-compare"></i></button>
+                                    <button type="button" class="btn btn-secondary"><i
+                                            class="fa-solid fa-magnifying-glass"></i></button>
+                                    <button type="button" class="btn btn-secondary"><i
+                                            class="fa-solid fa-cart-shopping"></i></button>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item border border-start-0">
+                            <div class="card position-relative border-0">
+                                <img src="images/owl/fashion-15-4-300x300.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <a href="#" class="link-item m-0 p-0">
+                                        <p class="lh-sm">TOOLS 34 Low Profile Hydraulic Trolley</p>
+                                    </a>
+                                    <span class="fw-bold fs-5">$767</span>
+                                    <span class="text-muted text-decoration-line-through">$837</span>
+                                    <br>
+                                    <span>
+                                        <i class="fa-solid fa-star icon"></i>
+                                        <i class="fa-solid fa-star icon"></i>
+                                        <i class="fa-solid fa-star icon"></i>
+                                        <i class="fa-solid fa-star icon"></i>
+                                        <i class="fa-solid fa-star icon"></i>
+                                    </span>
+                                </div>
+                                <div class="discount">
+                                    -35%
+                                </div>
+                                <div class="cardhover">
+                                    <button type="button" class="btn btn-secondary"><i
+                                            class="fa-regular fa-heart"></i></button>
+                                    <button type="button" class="btn btn-secondary"><i
+                                            class="fa-solid fa-code-compare"></i></button>
+                                    <button type="button" class="btn btn-secondary"><i
+                                            class="fa-solid fa-magnifying-glass"></i></button>
+                                    <button type="button" class="btn btn-secondary"><i
+                                            class="fa-solid fa-cart-shopping"></i></button>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item border border-start-0">
+                            <div class="card position-relative border-0">
+                                <img src="images/owl/fashion-15-4-300x300.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <a href="#" class="link-item m-0 p-0">
+                                        <p class="lh-sm">TOOLS 34 Low Profile Hydraulic Trolley</p>
+                                    </a>
+                                    <span class="fw-bold fs-5">$767</span>
+                                    <span class="text-muted text-decoration-line-through">$837</span>
+                                    <br>
+                                    <span>
+                                        <i class="fa-solid fa-star icon"></i>
+                                        <i class="fa-solid fa-star icon"></i>
+                                        <i class="fa-solid fa-star icon"></i>
+                                        <i class="fa-solid fa-star icon"></i>
+                                        <i class="fa-solid fa-star icon"></i>
+                                    </span>
+                                </div>
+                                <div class="discount">
+                                    -35%
+                                </div>
+                                <div class="cardhover">
+                                    <button type="button" class="btn btn-secondary"><i
+                                            class="fa-regular fa-heart"></i></button>
+                                    <button type="button" class="btn btn-secondary"><i
+                                            class="fa-solid fa-code-compare"></i></button>
+                                    <button type="button" class="btn btn-secondary"><i
+                                            class="fa-solid fa-magnifying-glass"></i></button>
+                                    <button type="button" class="btn btn-secondary"><i
+                                            class="fa-solid fa-cart-shopping"></i></button>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+
+
+    <!-- Footer Start -->
+    <footer class="footer container-fluid py-5 bg-footer px-0">
+        <div class="col-12 d-md-none d-block mb-4">
+            <img src="images/footer/logo.png" class="col-4 mb-4">
+            <div class="row footer-text-color align-items-center">
+                <div class="col-1 text-center mb-1"><i class="fa-solid fa-location-dot"></i></div>
+                <div class="col-10">
+                    <p class="mb-0">29 SE 2nd Ave, Miami Florida 33131, United States</p>
+                </div>
+            </div>
+            <div class=" footer-text-color row align-items-center mb-4">
+                <div class="col-1 text-center"><i class="fa-solid fa-envelope text-center"></i></div>
+                <div class="col-10">
+                    <p class="mb-0">29 SE 2nd Ave, Miami Florida 33131, United States</p>
+                </div>
+            </div>
+            <div>
+                <a href="#" class="link-item fs-4">(+92) 3942 7879</a>
+            </div>
+        </div>
+
+
+        <div class="container px-0 m-auto row justify-content-between" dir="rtl">
+            <div class="col-md-3 col-12 pb-4" dir="ltr">
+                <p class="text-white fs-4">Let's keep in touch</p>
+                <div class="input-group mb-3 bg-footer border border-1 rounded-2 text-white py-1 mt-5">
+                    <input type="text" class="form-control bg-transparent border-0 text-white"
+                        placeholder="enter your email" aria-label="Recipient’s username"
+                        aria-describedby="button-addon2">
+                    <button class="btn btn-outline-secondary border-0" type="button" id="button-addon2">
+                        <a href="#" class="link-item"> <i class="fa-solid fa-arrow-right"></i></a>
+                    </button>
+                </div>
+                <div class="mt-5">
+                    <span class="px-2"><a href="#" class="link-item"><i
+                                class="fa-brands fa-facebook-f icon"></i></a></span>
+                    <span class="px-2"><a href="#" class="link-item"><i class="fa-brands fa-tiktok icon"></i></a></span>
+                    <span class="px-2"><a href="#" class="link-item"><i
+                                class="fa-brands fa-x-twitter icon"></i></a></span>
+                    <span class="px-2"><a href="#" class="link-item"><i
+                                class="fa-brands fa-youtube icon"></i></a></span>
+                    <span class="px-2"><a href="#" class="link-item"><i
+                                class="fa-brands fa-instagram icon"></i></a></span>
+                </div>
+            </div>
+
+            <div class="col-md-2 col-3" dir="ltr">
+                <p class="fs- text-white mb-4 fw-bold">Account</p>
+                <ul class="list-unstyled">
+                    <li class="my-4"><a href="#" class="link-item">Cart</a></li>
+                    <li class="my-4"><a href="#" class="link-item">My accout</a></li>
+                    <li class="my-4"><a href="#" class="link-item">My orders</a></li>
+                    <li class="my-4"><a href="#" class="link-item">Wishlist</a></li>
+                    <li class="my-4"><a href="#" class="link-item">Affiliate Program</a></li>
+                </ul>
+            </div>
+
+            <div class="col-md-2 col-3" dir="ltr">
+                <p class="fs-6 text-white mb-4 fw-bold">Information</p>
+                <ul class="list-unstyled">
+                    <li class="my-4"><a href="#" class="link-item">Track order</a></li>
+                    <li class="my-4"><a href="#" class="link-item">Shipping & Returns</a></li>
+                    <li class="my-4"><a href="#" class="link-item">About us</a></li>
+                    <li class="my-4"><a href="#" class="link-item">Help</a></li>
+                    <li class="my-4"><a href="#" class="link-item">Git Cards</a></li>
+                </ul>
+            </div>
+
+            <div class="col-md-2 col-3" dir="ltr">
+                <p class="fs- text-white mb-4 fw-bold">Shopping</p>
+                <ul class="list-unstyled">
+                    <li class="my-4"><a href="#" class="link-item">Wishlist</a></li>
+                    <li class="my-4"><a href="#" class="link-item">Shop by Brand</a></li>
+                    <li class="my-4"><a href="#" class="link-item">Offers</a></li>
+                    <li class="my-4"><a href="#" class="link-item">Track order</a></li>
+                    <li class="my-4"><a href="#" class="link-item">Size Guide</a></li>
+                </ul>
+            </div>
+
+            <div class="col-md-3 col-3 pe-2" dir="ltr">
+                <img src="images/footer/logo.png" class="w-50 mb-5">
+                <div class="row footer-text-color align-items-center">
+                    <div class="col-1"><i class="fa-solid fa-location-dot"></i></div>
+                    <div class="col-10">
+                        <p class="">29 SE 2nd Ave, Miami Florida 33131, United States</p>
+                    </div>
+                </div>
+                <div class=" footer-text-color row align-items-center">
+                    <div class="col-1"><i class="fa-solid fa-envelope"></i></div>
+                    <div class="col-10">
+                        <p class="">29 SE 2nd Ave, Miami Florida 33131, United States</p>
+                    </div>
+                </div>
+                <div>
+                    <a href="#" class="link-item fs-4">(+92) 3942 7879</a>
+                </div>
+            </div>
+
+        </div>
+        <div class="container mx-auto mt-5 row down-footer">
+            <div class="col-md-4 col-11 row align-items-start p-0 mb-2">
+                <div class="col-2 text-white pt-2">
+                    <i class="fa-solid fa-phone fa-2x"></i>
+                </div>
+                <div class="col-10 text-white p-0">
+                    <p class="mb-1 fw-light">Didn't find what you were looking for?</p>
+                    <a href="#" class="slide-link">Contact us</a>
+                </div>
+            </div>
+            <div class="col-md-4 col-11 row align-items-start p-0 mb-2">
+                <div class="col-2 text-white pt-2">
+                    <i class="fa-solid fa-phone fa-2x"></i>
+                </div>
+                <div class="col-10 text-white p-0">
+                    <p class="mb-1 fw-light">Didn't find what you were looking for?</p>
+                    <a href="#" class="slide-link">Contact us</a>
+                </div>
+            </div>
+            <div class="col-md-4 col-11 row align-items-start p-0 mb-2">
+                <div class="col-2 text-white pt-2">
+                    <i class="fa-solid fa-phone fa-2x"></i>
+                </div>
+                <div class="col-10 text-white p-0">
+                    <p class="mb-1 fw-light">Didn't find what you were looking for?</p>
+                    <a href="#" class="slide-link">Contact us</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer End -->
+    <!-- Canvas -->
+    <!-- Canvas For the nav Bar -->
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample1" aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header p-0">
+            <div class="row w-100 g-0 align-items-center">
+
+                <!-- Left-->
+                <div class="col-2 bg-black d-flex justify-content-center align-items-center" style="height: 50px;">
+                    <i class="fa-solid fa-bars text-white"></i>
+                </div>
+
+                <!-- Middle-->
+                <div class="col-8 bg-secondary-subtle d-flex justify-content-center align-items-center"
+                    style="height: 50px;">
+                    <p class="fw-bold text-uppercase m-0">Shop by Categories +</p>
+                </div>
+
+                <!-- Right-->
+                <div class="col-2 bg-secondary-subtle d-flex justify-content-center align-items-center"
+                    style="height: 50px;">
+                    <button type="button" class="btn-close m-0 p-0" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="offcanvas-body px-3 pt-0">
+            <ul class="list-unstyled mt-3">
+                <li class="d-flex justify-content-between align-items-center py-2 border-bottom">
+                    <a href="#" class="text-danger fw-bold text-decoration-none">Homepages</a>
+                    <span>+</span>
+                </li>
+                <li class="d-flex justify-content-between align-items-center py-2 border-bottom">
+                    <a href="#" class="text-black fw-bold text-decoration-none">Categories</a>
+                    <span>+</span>
+                </li>
+                <li class="d-flex justify-content-between align-items-center py-2 border-bottom">
+                    <a href="#" class="text-black fw-bold text-decoration-none">Products</a>
+                    <span>+</span>
+                </li>
+                <li class="d-flex justify-content-between align-items-center py-2 border-bottom">
+                    <a href="#" class="text-black fw-bold text-decoration-none">Pages</a>
+                    <span>+</span>
+                </li>
+                <li class="d-flex justify-content-between align-items-center py-2 border-bottom">
+                    <a href="#" class="text-black fw-bold text-decoration-none">About us</a>
+                    <span>+</span>
+                </li>
+                <li class="d-flex justify-content-between align-items-center py-2 border-bottom">
+                    <a href="#" class="text-black fw-bold text-decoration-none">Blog</a>
+                </li>
+                <li class="d-flex align-items-center py-2 border-bottom">
+                    <i class="fa-solid fa-ticket me-2"></i>
+                    <a href="#" class="text-black fw-bold text-decoration-none">Best Discount</a>
+                </li>
+                <li class="d-flex justify-content-between align-items-center py-2 border-bottom text-muted">
+                    <span>Recently viewed</span>
+                    <span>+</span>
+                </li>
+            </ul>
+
+            <div class="border-top mt-3 pt-3">
+                <div class="d-flex align-items-center mb-3">
+                    <i class="fa-regular fa-heart me-2"></i>
+                    <span>Wishlist (0)</span>
+                </div>
+                <div class="d-flex align-items-center mb-3">
+                    <i class="fa-regular fa-user me-2"></i>
+                    <span>Account</span>
+                </div>
+            </div>
+
+            <div class="border-top mt-3 pt-3">
+                <div class="d-flex flex-wrap gap-2 mb-2">
+                    <span class="text-decoration-underline fw-medium"> <a href="#" class="link-item">
+                            English</a></span>
+                    <span><a href="#" class="link-item"> Español</a></span>
+                    <span><a href="#" class="link-item"> Français</a></span>
+                    <span><a href="#" class="link-item"> Português</a></span>
+                </div>
+                <div class="d-flex flex-wrap gap-2">
+                    <span class="fw-bold"> <a href="#" class="link-item">USD</a></span>
+                    <span><a href="#" class="link-item">EUR</a></span>
+                    <span><a href="#" class="link-item">BRL</a></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="offcanvas offcanvas-start " tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header p-0 m-0">
+            <!-- Left icon (menu icon) -->
+            <div class="col-2 bg-black d-flex justify-content-center align-items-center" style="height: 50px;">
+                <i class="fa-solid fa-bars text-white"></i>
+            </div>
+
+            <!-- Middle title -->
+            <div class="col-10 bg-black d-flex justify-content-start align-items-center" style="height: 50px;">
+                <p class="fw-bold text-uppercase m-0 text-white">Shop by Categories</p>
+            </div>
+        </div>
+        <!-- Canva Title -->
+        <div class="offcanvas-body p-0" style="overflow: visible !important;">
+            <div class="pt-0">
+                <ul class="list-unstyled">
+                    <li class="p-3 border-bottom list-item-canva">
+                        <a href="#"
+                            class="text-black text-decoration-none d-flex justify-content-between align-items-center">
+                            <span>
+                                <img src="images/icon-menu-1.png" style="width: 18px; margin-left: 6px;">
+                                Fasion
+                            </span>
+                            <span>+</span>
+                        </a>
+                        <div class="list-item-canva-hover container px-0 ">
+                            <div class="row p-0">
+                                <div class="col-6 px-4 py-4 fs-6">
+                                    <p class="fw-bold">Women</p>
+                                    <ul class="p-0">
+                                        <li class="">
+                                            <a href="#" class="link-item">link</a>
+                                        </li>
+                                        <li class="">
+                                            <a href="#" class="link-item">Accessories</a>
+                                        </li>
+                                        <li class="">
+                                            <a href="#" class="link-item">Blazers</a>
+                                        </li>
+                                        <li class="">
+                                            <a href="#" class="link-item">Coats & Jackets</a>
+                                        </li>
+                                        <li class="">
+                                            <a href="#" class="link-item">Dress</a>
+                                        </li>
+                                        <li class="">
+                                            <a href="#" class="link-item">Shirts</a>
+                                        </li>
+                                        <li class="">
+                                            <a href="#" class="link-item">Shoes</a>
+                                        </li>
+                                        <li class="">
+                                            <a href="#" class="link-item">Shorts</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-6 px-4 py-4">
+                                    <p class="fw-bold">MAN</p>
+                                    <ul class="p-0">
+                                        <li class="">
+                                            <a href="#" class="link-item">link</a>
+                                        </li>
+                                        <li class="">
+                                            <a href="#" class="link-item">Accessories</a>
+                                        </li>
+                                        <li class="">
+                                            <a href="#" class="link-item">Blazers</a>
+                                        </li>
+                                        <li class="">
+                                            <a href="#" class="link-item">Coats & Jackets</a>
+                                        </li>
+                                        <li class="">
+                                            <a href="#" class="link-item">Dress</a>
+                                        </li>
+                                        <li class="">
+                                            <a href="#" class="link-item">Shirts</a>
+                                        </li>
+                                        <li class="">
+                                            <a href="#" class="link-item">Shoes</a>
+                                        </li>
+                                        <li class="">
+                                            <a href="#" class="link-item">Shorts</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-12 p-3 item-full">
+                                <div class="bg-wrapper">
+                                    <img src="images/banner-vertical-menu-1.jpeg" class="img-fluid">
+                                    <div class="canva-item-first-body">
+                                        <p class="letter-space p-0 mb-1">New Collection</p>
+                                        <h4 class="fw-bold">Bobby <br> Caro Dress</h4>
+                                        <button type="button" class="btn btn-outline-light mt-3">Shop Now</button>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="p-3 border-bottom list-item-canva">
+                        <a href="#"
+                            class="text-black text-decoration-none d-flex justify-content-between align-items-center">
+                            <span>
+                                <img src="images/Icon menu/icon-menu-2.png" style="width: 18px; margin-left: 6px;">
+                                Phone & Tablet
+                            </span>
+                            <span>+</span>
+                        </a>
+                    </li>
+                    <li class="p-3 border-bottom list-item-canva">
+                        <a href="#"
+                            class="text-black text-decoration-none d-flex justify-content-between align-items-center">
+                            <span>
+                                <img src="images/Icon menu/icon-menu-3.png" style="width: 18px; margin-left: 6px;">
+                                Laptop & Computer
+                            </span>
+                            <span>+</span>
+                        </a>
+                    </li>
+                    <li class="p-3 border-bottom list-item-canva">
+                        <a href="#"
+                            class="text-black text-decoration-none d-flex justify-content-between align-items-center">
+                            <span>
+                                <img src="images/Icon menu/icon-menu-4.png" style="width: 18px; margin-left: 6px;">
+                                TV, Audio – Video
+                            </span>
+                            <span>+</span>
+                        </a>
+                    </li>
+                    <li class="p-3 border-bottom list-item-canva">
+                        <a href="#"
+                            class="text-black text-decoration-none d-flex justify-content-between align-items-center">
+                            <span>
+                                <img src="images/icon-menu-1.png" style="width: 18px; margin-left: 6px;">
+                                Fasion
+                            </span>
+                            <span>+</span>
+                        </a>
+                    </li>
+                    <li class="p-3 border-bottom list-item-canva">
+                        <a href="#"
+                            class="text-black text-decoration-none d-flex justify-content-between align-items-center">
+                            <span>
+                                <img src="images/icon-menu-1.png" style="width: 18px; margin-left: 6px;">
+                                Fasion
+                            </span>
+                            <span>+</span>
+                        </a>
+                    </li>
+                    <li class="p-3 border-bottom list-item-canva">
+                        <a href="#"
+                            class="text-black text-decoration-none d-flex justify-content-between align-items-center">
+                            <span>
+                                <img src="images/icon-menu-1.png" style="width: 18px; margin-left: 6px;">
+                                Fasion
+                            </span>
+                            <span>+</span>
+                        </a>
+                    </li>
+                    <li class="p-3 border-bottom list-item-canva">
+                        <a href="#"
+                            class="text-black text-decoration-none d-flex justify-content-between align-items-center">
+                            <span>
+                                <img src="images/icon-menu-1.png" style="width: 18px; margin-left: 6px;">
+                                Fasion
+                            </span>
+                            <span>+</span>
+                        </a>
+                    </li>
+                    <li class="p-3 border-bottom list-item-canva">
+                        <a href="#"
+                            class="text-black text-decoration-none d-flex justify-content-between align-items-center">
+                            <span>
+                                <img src="images/icon-menu-1.png" style="width: 18px; margin-left: 6px;">
+                                Fasion
+                            </span>
+                            <span>+</span>
+                        </a>
+                    </li>
+                    <li class="p-3 border-bottom list-item-canva">
+                        <a href="#"
+                            class="text-black text-decoration-none d-flex justify-content-between align-items-center">
+                            <span>
+                                <img src="images/icon-menu-1.png" style="width: 18px; margin-left: 6px;">
+                                Fasion
+                            </span>
+                            <span>+</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- Linking bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
