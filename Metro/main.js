@@ -94,3 +94,20 @@ searchplace.addEventListener("click" ,function(e){
     if(e.target == searchplace) searchwindow.classList.toggle("d-none")
     
 })
+
+window.addEventListener("scroll", (e) => {
+    if (window.scrollY > 100) {
+        up.classList.remove("d-none");
+    }
+    else {
+        up.classList.add("d-none");
+    }
+})
+
+let up = document.querySelector("#up")
+    up.addEventListener("click", () => {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+    });
+});
